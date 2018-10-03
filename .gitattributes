@@ -1,0 +1,95 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+<!DOCTYPE html>
+<html lang="nb">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>P2 Requierments</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>P2 Project Requirements</h1>
+      <h2>Arnstein, Emilie, Hjalti og Sepehr</h2>
+      <p>08. Oktober 2018</p>
+    </header>
+
+    <hr>
+
+    <div class="client">
+      <h2>Administrative detaljer:</h2>
+      <ul>
+        <li>Tacorama</li>
+      </ul>
+      <p>Filippo Hernandez er CEO hos kjederestauranten, Tacorama.  </p>
+    </div>
+
+    <div class="purpose">
+      <h2>Mål og mening</h2>
+      <p>Målet med nettsiden er å gi de potensielle kundene til Tacorama et godt inntrykk ved å vise dem en brukervennlig nettside.
+        Nettsiden skal gi kundene all informasjonen de skal trenge for å bli tiltrukket til Tacorama.
+        For å gjøre dette må nettsiden kunne imponere med funksjonelle og ikke-funksjonelle egenskaper.
+        Vi skal ha et høyt nivå med brukervennlighet ved å ha en menybar og andre godt tydelige linker som skal koble de forskjellige sidene sammen.
+        Vi har et mål om at all informasjon skal være tilgjengelig på ett klikk.</p>
+    </div>
+
+    <div class="audience">
+      <h2>Målgruppe</h2>
+      <p>Målgruppen til Tacorama vil hovedsakelig være unge voksne, studenter og de som anser seg selv som taco-elskere.
+        Vi vil ha ekstra fokus på studenter slik at de kan komme til Tacorama for et avbrekk fra studentlivet,
+        og nyte god mat og drikke. En viktig del av målgruppen vil også være de som er på utkikk etter et godt
+        måltid - som vil bli fristet av bildene av maten på nettsiden (og den gode prisen) - på en uformell restaurant.</p>
+    </div>
+
+    <div class="content">
+      <h2>Sidens innhold</h2>
+        <ul>
+          <li>
+            <h4>Hjem</h4>
+            Hjem-siden vil være delt opp i tre deler. Det første som møter sidens besøkende vil være et stort bilde av en taco med Tacoramalogoen.
+            Videre nedover vil det være to inndelinger. Først vil det bli fortalt kort og konsist om konseptet Tacorama og restaurantens historie,
+            deretter kort informasjon om menyen. Her kommer det ikke til å stå spesifikt om retter og priser,
+            men heller en generell beskrivelse av hvor man har hentet inspirasjon fra og hva slags smaker man kan forvente.
+            Poenget med denne siden er å gi en kort innføring i konseptet Tacorama, samtidig som teksten ikke skal være formell og kjedelig.
+          </li>
+          <li>
+            <h4>Meny</h4>
+            Her vil informasjon om de forskjellige tacoene/rettene stå, samt en kort introduksjon til menyen.
+            Layouten til menyen kommer til å være meksikansk inspirert og vil inneholde all informasjon om retter, priser og allergener.
+          </li>
+          <li>
+            <h4>Kontakt oss</h4>
+            Kontakt oss siden vil ha en kort info tekst og bilde av eieren. Ettersom det er flere restauranter vil det også være
+            litt info om hver restaurant. I tillegg vil det være et google maps vindu med plasseringene til de forskjellige restaurantene.
+          </li>
+          <li>
+            <h4>Footer</h4>
+            Her vil det stå kontaktinfo (e-post adresse, telefonnummer) og linker til sosiale medier.
+          </li>
+        </ul>
+    </div>
+
+    <div class="requirements">
+      <h2>Funksjonelle og ikke-funksjonelle krav</h2>
+      <p>Funksjonelle krav:</p>
+        <ul>
+          <li>Vi tenker å ha en menybar øverst som skal ligge horisontal, bevege seg relativt til nettleserstørrelse og ha de
+            viktigste funksjonene en trenger, uten at man trenger å lete.</li>
+          <li>Vi vil lage en type medlemskap der man kan lage en bruker og kunne dra nytte av medlemstilbud osv.</li>
+          <li>Logoen skal også fungere som Hjem-knapp, som skal gjøre nettsiden mer intuitiv. Utfordringen er å informere brukeren om dette.</li>
+          <li>Brukeren skal klare å bestille take-away på nettsiden.</li>
+        </ul>
+      <p>Ikke-funksjonelle krav:</p>
+        <ul>
+          <li>Vi skal ha en logo som samsvarer med formålet til nettsiden, og som fungerer som logoen til selve restauranten.
+            Logoen skal være uformell og et bilde som lett kan bli gjenkjent.</li>
+          <li>Det er viktig for oss at nettsiden skal være enkel å navigere gjennom, finne info som man leter så fort som mulig med best mulig brukeropplevelse.</li>
+          <li>Alle sidene på nettsiden skal være tilgjengelig ved ett klikk.</li>
+        </ul>
+    </div>
+
+    <footer>Arnstein, Emilie, Hjalti og Sepehr</footer>
+
+  </body>
