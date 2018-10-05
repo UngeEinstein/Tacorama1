@@ -3,7 +3,9 @@ body {
   margin: auto;
   font-family: "Times New Roman", Times, Serif;
 }
-
+img {
+  width: 800px;
+}
 h1 {
   font-size: 40px;
 }
