@@ -92,8 +92,11 @@
       <h2>Innhold</h2>
           <h4>1. Startside - index.html</h4>
           <p>Startsiden vil være den første siden brukeren ser som besøker Tacorama sin nettside.
-            Det første som vil møte brukeren er et stort bilde av mat (taco) med teksten «Make a booking».
-            Det vil altså være veldig lett å booke bord med en gang. Videre vil brukeren kunne lese om oss, og hva menyen vil bestå av.</p>
+            Det første som vil møte brukeren er et stort bilde av mat (taco) med teksten «Make a booking». Det vil altså være veldig lett å booke bord med en gang.
+            Dette bildet vil være det første i rekken av et slideshow der man kan bla ved hjelp av små pilknapper på siden av bildet.
+            De andre bildene brukeren kan bla til vil være bilder med teksten "meny" og "våre restauranter". Ved å trykke på disse bildene
+            vil brukeren sendes til siden som teksten på bildet tilsier.
+            Videre vil brukeren kunne lese om oss, og hva menyen vil bestå av.</p>
           <p>Målet med startsiden er å virke appellerende slik at brukeren får lyst til å se videre på nettsiden.
             Det er viktig at startsiden er ren og ryddig, og enkel å navigere seg gjennom.
             Førsteinntrykket til brukeren kommer fra startsiden, så det er avgjørende at den er fin og appellerende. </p>
@@ -112,22 +115,57 @@
           <p> Denne siden skal i utgangspunktet kun vise statisk informasjon om restauranten.
             For eksempel; Epost til hver lokasjon, adresse, telefonnummer, navn og bilder av maten de serverer.
             Den blå teksten i bildet skal lunke til google maps med restauranten som destinasjon.
+            <img src="img/restauranter.png" alt="Bildet av siden for restauranter">
 
+          <h4> 4. Menyside- Meny.html </h4>
+          <p> Menysiden vil inneholde en detaljert meny der man også vil kunne bestille takeaway. det første som
+            vil møte den besøkende vil være menyen med detaljert informasjon om retten, prisen på retten og allergener.
+            Det vil også være en markør som viser hvor sterk hver rett er, representer ved røde chillier bak retten.
+            Skalaen varier fra 0-2 chillier.
+            <br>
+          <p>Målgruppen til Tacorama er ungde voksene/voksene(18-35år). I denne målgruppen er det mange som har mye på tapeten og lite tid til å sette
+            seg ned i restauranten for å spise. For å også nå ut til denne forbrukergruppen har vi bestemt oss for å gi brukerene muligheten til å
+            bestille takeaway på hjemmesiden. Denne funksjonen vil også gjøre det lettere å legge inn store bestillinger og ettersom Tacorama tilbyr
+             mat til en fornuftig pris, tenker vi at dette er en funksjon som også kan bli
+            brukt mye i forbindelse med å bestille mat til møter i diverse organisasjoner og foreninger, noe som igjen vil føre til at flere blir kjent
+            med konseptet Tacorama og velger å besøke restauranen selv.
+            <br>
+            <br>
+            <img src="img/meny.png" alt="Bildet av siden for restauranter">
+
+            <br>
+          <p> Brukeren kan trykke på de forskjellige rettene for å legge dem til i bestillingen sin. Antall retter bestilt vises også ved siden av restaurantene
+              i en rød boks. Bestillinggsvinduet med all informasjon om bestillingen vises lengere ned på siden. Her vil det også legges til en funksjon som gjør at man kan fjærne
+              retter fra bestillingen(før bestillingen er bekreftet.)
+            <br>
+            <br>
+            <img src="img/bestilling1.png" alt="Bildet av siden for restauranter">
+            <br>
+            <br>
+            <p> Her ser vi bestillingen oppsummert. Etter at brukeren har skrevet inn all nødvendig informasjon. Vil vinduet med kontaktinformasjon oppdatere seg.
+              <br>
+              <br>
+            <img src="img/bestilling2.png" alt="Bildet av siden for restauranter">
           </p>
-          <img src="img/restauranter.png" alt="Bildet av siden for restauranter">
 
 
     </div>
 
     <div class="requirements">
       <h2>Krav til JavaScript</h2>
-      <p>På nettsiden må vi ha minst fire JavaScript-funkjoner. Disse har vi tenkt:</p>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <p>På nettsiden vil vi ha minst fire JavaScript-funkjoner.</p>
+      <ol>
+        <li> Vi vil ha en funksjon som gjør at man skal kunne booke bord online. Dette vil gi kunden en sikkerhet på at man kan dra til Tacorama for
+              å spise uten å være usikker på om man får et bord eller ikke og forhåpentligvis føre til at restauranten får flere besøkende. Denne funksjonen vil ligge under booking.html
+              og være Sepehrs ansvar</li>
+        <li> På index.html vil vi ha et slideshow som inneholder tre bilder der brukeren kan bytte mellom bildene ved hjelp av som pilknapper på siden av bildet.
+        Disse tre bildene vil være linker til de tre forksjellige punktene på menyen: "booking","meny" og "våre restauranter". Dette vil være Emilie sitt ansvar </li>
+        <li> På meny.html vil det være en funksjon som gjør at brukeren kan bestille mat som hentes ved restauranten brukeren velger. Målet med denne applikasjonen er
+            å gi brukeren følelsen av at mat fra Tacorama er bare noen tastetrykk unna, som igjen vil føre til flere kunder til restauranten. Denne applikkasjonen vil
+            telle antall retter som er bestilt, legge sammen og vise hva som er bestilt, ta inn informasjon fra brukeren og gi en bekreftelse på bestillingen til brukeren. Dette vil være Arnstein sitt ansvar</li>
+        <li>Både booking- og bestillingfunksjonen vil trenge input fra brukeren. Vi vil derfor ha en funksjon som kontrollerer at korrekt og valid informasjon er skrevet inn i riktig felt.
+            Dette vil være Hjalti sitt ansvar</li>
+      </ol>
     </div>
 
     <div class="plan">
@@ -141,7 +179,7 @@
         <li>bestilling.html</li>
         <li>navbar.html</li>
         <li>img/</li>
-          <ul>
+          <il>
             <li>logo.png</li>
             <li>startside1.png</li>
             <li>startside2.png</li>
