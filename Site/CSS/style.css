@@ -5,7 +5,7 @@ body {
 }
 
 #forsidebilde {
-  width: 100%;
+  width:inherit;
 }
 
 .content {
@@ -54,6 +54,10 @@ p {
   padding: 10px;
 }
 
+.hovedb label {
+    display: block;
+    font-size: 20px;
+}
 footer > ul {
   display: flex;
   list-style: none;

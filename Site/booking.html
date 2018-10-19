@@ -2,10 +2,53 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" src="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bubbler One' rel='stylesheet'>
     <title></title>
   </head>
   <body>
-    
+    <div class="content">
+    <h1> Book bord hos oss! </h1>
+    <div class="hovedb">
+      <form action:"Script/book.js">
+        <select name="Restauranter">
+          <option value="Solsiden"> Solsiden </option>
+          <option value="Gronland"> Grønland </option>
+          <option value="Alta"> Alta </option>
+          <option value="Majorstuen"> Majorstuen </option>
+        </select>
+
+        <label name="navn"> Navn: </label>
+        <input name="navn" type="text" required>
+
+        <label name="enavn"> Etternavn: </label>
+        <input type="text" name="etternavn" required><br>
+
+        <label name="epost"> E-mail: </label>
+        <input type="email" name="email" required>
+
+        <label name="telefon"> Telefonnummer: </label>
+        <input type="number" name="telefon" min="8" required>
+
+        <label name="datb"> Ønsket dato: </label>
+        <input type="date" name="datb"  required>
+
+        <label name="tidb"> Ønsket tidspunkt: </label>
+        <input type="time" name="tidb" min="11:00" max="23:00" required>
+
+        <label name="komment"> Kommentarer: </label>
+        <textarea rows="4" cols="50" required></textarea>
+
+
+
+        <input type="submit"></submit>
+<!-- Spør om hvordan man setter min date til today -->
+      </form>
+    </div>
+
+
+  </div>
+  <script src="Script/book.js">
   </body>
 </html>
