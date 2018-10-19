@@ -1,14 +1,63 @@
 body {
-  width: 68%;
-  margin: auto;
+  width: 100%;
   background-color: #fce5cdff;
+  font-family: "Bubbler One";
 }
 
-p {
-  font-family: Verdana;
-  text-align: center;
+#forsidebilde {
+  width: 100%;
 }
-footer {
+
+.content {
+  width: 60%;
+  margin: auto;
+}
+
+h2 {
+  font-size: 40px;
   text-align: center;
-  display: inline;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/*h2::after {
+  content: '';
+  position: absolute;
+  height: 0.2rem;
+  width: 20%;
+  background: black;
+  top: 30%;
+  transform: translateY(-90%);
+}*/
+
+p {
+  text-align: center;
+  font-size: 19px;
+  letter-spacing: 2px;
+  color: #231f20;
+}
+
+.row_img {
+  display: flex;
+}
+
+.column_img {
+  flex: 50%;
+  padding: 10px;
+}
+
+footer > ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  margin: 0 10% 0 10%;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+.footer {
+  margin: 3% 7% 1% 7%;
+  border-top: 1.5px solid black;
 }
