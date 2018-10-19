@@ -1,11 +1,4 @@
-webshims.setOptions('forms-ext', {
-    replaceUI: 'auto',
-    types: 'date'
-});
-webshims.polyfill('forms forms-ext');
-
-$(function(){
-    $('[type="date"].min-today').prop('min', function(){
-        return new Date().toJSON().split('T')[0];
-    });
-});
+const dateElement = document.getElementById("minDate");
+let d = new Date();
+console.log(d.getHours());
+dateElement.setAttribute("min", d.toJSON().split('T')[0])
