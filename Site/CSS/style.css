@@ -11,6 +11,7 @@ body {
 .content {
   width: 60%;
   margin: auto;
+  position: relative;
 }
 
 h2 {
@@ -20,15 +21,22 @@ h2 {
   letter-spacing: 2px;
 }
 
-/*h2::after {
-  content: '';
+h2::after {
+  left: 5%;
+}
+
+h2::before {
+  right: 5%;
+}
+
+h2::after, h2::before {
+  content: " ";
   position: absolute;
   height: 0.2rem;
-  width: 20%;
-  background: black;
-  top: 30%;
-  transform: translateY(-90%);
-}*/
+  width: 30%;
+  top: 1.5%;
+  background-color: black;
+}
 
 p {
   text-align: center;
