@@ -4,23 +4,32 @@ body {
   margin: 0 0 0 0;
 }
 
+/* CSS til index.html START*/
 #forsidebilde {
-  width:inherit;
+  width: 100%;
 }
 
-.content {
-  width: 60%;
-  margin: auto;
+.index_startimg {
   position: relative;
+  width: 100%;
 }
 
-h2 {
-  font-size: 40px;
-  text-align: center;
+.index_startimg_content { /* MÅ FÅ TIL SLIK AT DENNE BLIR MINDRE MED NETTLESEREN*/
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
+  font-size: 100px;
+  border: 0.2rem solid #b73d0f;
+  color: #b73d0f;
+  background: rgba(252, 229, 205, 0.6);
+  text-align: center;
 }
 
+/* FIKSER DETTE SENERE!
 h2::after {
   left: 5%;
 }
@@ -37,13 +46,7 @@ h2::after, h2::before {
   top: 1.5%;
   background-color: black;
 }
-
-p {
-  text-align: center;
-  font-size: 19px;
-  letter-spacing: 2px;
-  color: #231f20;
-}
+*/
 
 .row_img {
   display: flex;
@@ -53,11 +56,35 @@ p {
   flex: 50%;
   padding: 10px;
 }
+/* CSS til index.html SLUTT*/
+
+.content {
+  width: 60%;
+  margin: auto;
+  position: relative;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #b73d0f;
+}
+
+p {
+  text-align: center;
+  font-size: 19px;
+  letter-spacing: 2px;
+  color: #231f20;
+  line-height: 28px;
+}
 
 .hovedb label {
     display: block;
     font-size: 20px;
 }
+
 footer > ul {
   display: flex;
   list-style: none;
