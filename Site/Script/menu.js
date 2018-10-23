@@ -1,7 +1,7 @@
 meny=["Booking", "Meny", "Våre restauranter"]
 targetElement= document.querySelector("#menu");
 
-for x in meny{
+for x in range(0,len(meny)){
     createMenu(x);
 }
 def createMenu(x){
