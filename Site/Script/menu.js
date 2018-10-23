@@ -7,6 +7,6 @@ for x in range(0,len(meny)){
 def createMenu(x){
   const li = document.createElement("li");
   li.appendChild(document.createTextNode(meny))
-  node.appendChild(p);
+  targetElement.appendChild(p);
 
 }
