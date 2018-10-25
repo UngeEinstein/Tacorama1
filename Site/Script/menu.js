@@ -1,12 +1,12 @@
 meny=["Booking", "Meny", "Våre restauranter"]
-targetElement= document.querySelector("#menu");
 
-for x in range(0,len(meny)){
-    createMenu(x);
+function addmenu(){
+  targetElement= document.querySelector("#menu");
+
+  const lagli = document.createElement("li");
+  lagli.appendChild(document.createTextNode(meny[i]));
+  targetElement.appendChild(lagli);
 }
-def createMenu(x){
-  const li = document.createElement("li");
-  li.appendChild(document.createTextNode(meny))
-  targetElement.appendChild(p);
-
+for (i in meny){
+    addmenu(i)
 }
