@@ -6,7 +6,7 @@ var div = document.getElementById('inputval');
 
 function show(value) {
     if (value !== "loc0") {
-    document.getElementById("form").style.display='inline-block';
+    document.getElementById("form").style.display='initial';
     }
     else{
     document.getElementById("form").style.display='none';
