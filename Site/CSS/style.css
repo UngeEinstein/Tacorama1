@@ -84,7 +84,23 @@ p {
     display: block;
     font-size: 20px;
 }
+<<<<<<< HEAD
+.hovedb {
+  text-align: center;
 
+}
+.hovedb textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+=======
+
+>>>>>>> 2f5cb325ae64c11fc39d54019edbba4e296a0659
 footer > ul {
   display: flex;
   list-style: none;

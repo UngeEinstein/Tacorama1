@@ -11,7 +11,7 @@
     <div class="content">
     <h1> Book bord hos oss! </h1>
     <div class="hovedb">
-      <form action:"Script/book.js">
+      <form action:"Script/book.js" method="post">
         <select name="Restauranter">
           <option value="Solsiden"> Solsiden </option>
           <option value="Gronland"> Grønland </option>
@@ -32,13 +32,11 @@
         <input type="number" name="telefon" min="8" required>
 
         <label name="datb"> Ønsket dato: </label>
-        <input type="date" name="datb"  required>
+        <input type="date" name="datb" id="minDate" required>
 
-        <label name="tidb"> Ønsket tidspunkt: </label>
-        <input type="time" name="tidb" min="11:00" max="23:00" required>
 
         <label name="komment"> Kommentarer: </label>
-        <textarea rows="4" cols="50" required></textarea>
+        <textarea rows="4" cols="50"></textarea>
 
 
 
@@ -49,6 +47,6 @@
 
 
   </div>
-  <script src="Script/book.js">
+  <script src="Script/book.js"></script>
   </body>
 </html>
