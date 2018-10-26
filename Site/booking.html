@@ -21,7 +21,7 @@
           <option value="loc3"> Alta </option>
           <option value="loc4"> Majorstuen </option>
         </select>
-        <div class="inputvalg" id="form"style="display:none">
+        <div class="inputvalg" id="form" style="display:none">
 
           <label name="navn"> Navn: </label>
           <input name="navn" type="text" required>
@@ -38,10 +38,13 @@
           <label name="datb"> Ønsket dato: </label>
           <input type="date" name="datb" id="minDate" required>
 
+          <label name="tid"> Hvilket tidspunkt passer best?</label>
+          <input type="time" name="time" min="11:00" max="23:00" required>
+
 
           <label name="komment"> Kommentarer: </label>
-          <textarea rows="4" cols="50"></textarea> <br>
-          <input type="submit"></submit>
+          <textarea rows="4" cols="30"></textarea> <br>
+          <input type="submit" id="submit" onclick="myFunction()"></submit>
 
       </form>
     </div>
