@@ -19,23 +19,23 @@
           <option value="loc0"> Velg restaurant </option>
           <option value="loc1"> Solsiden </option>
           <option value="loc2"> Grønland </option>
-          <option value="loc3"> Alta </option>
+          <option value="loc3"> Tyskebryggen </option>
           <option value="loc4"> Majorstuen </option>
         </select>
 
         <div class="inputvalg" id="form" style="display:none">
 
           <label name="navn"> Navn: </label>
-          <input type="text" id="Navn"required>
+          <input type="text" id="Navn" required>
 
           <label name="enavn"> Etternavn: </label>
-          <input type="text" id="Enavn"required><br>
+          <input type="text" id="Enavn" required><br>
 
           <label name="epost"> E-mail: </label>
-          <input type="email"id="e-post" required>
+          <input type="email" id="e-post" required>
 
           <label name="telefon"> Telefonnummer: </label>
-          <input type="number"id="tlf"min="8" required>
+          <input type="number" id="tlf" min="8" required>
 
           <label name="datb"> Ønsket dato: </label>
           <input type="date" id="minDate" required>
@@ -46,24 +46,30 @@
 
 
           <label name="komment"> Kommentarer: </label>
-          <textarea rows="4" cols="30"id="kom"></textarea> <br>
+          <textarea rows="4" cols="30" id="kom"></textarea> <br>
           <input type="submit" id="submit" onClick="display();" value="Display"></submit>
 
       </form>
     </div>
     <div class="booking-restaurant">
-      <h2>Solsiden</h2>
-      <p><p>
-      <h2>Grønland</h2>
-      <p><p>
-      <h2>Alta</h2>
-      <p><p>
-      <h2>Majorstuen</h2>
-      <p><p>
+      <div class="first-row-booking">
+        <h2>Solsiden</h2>
+        <p> SOLSIDEN <p>
+            <h2>Grønland</h2>
+            <p> GRØNLAND <p>
+      </div>
+      <div class="second-row-booking">
+        <h2>Tyskebryggen</h2>
+        <p>TYSKEBRYGGEN<p>
+            <h2>Majorstuen</h2>
+            <p> MAJORSTUEN <p>
+      </div>
     </div>
   </div>
 
   </div>
+<iframe src="footer.html"width="100%"style="border:none;"></iframe>
+
   <script src="Script/book.js"></script>
 </body>
 
