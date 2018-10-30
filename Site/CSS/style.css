@@ -1,6 +1,6 @@
 body {
   background-color: #fce5cdff;
-  font-family: "Bubbler One";
+  font-family: "Bubbler One", Verdana;
   margin: 0 0 0 0;
 }
 
@@ -118,25 +118,33 @@ p {
   margin: 3% 7% 1% 7%;
   border-top: 1.5px solid black;
 }
-#navbar{
-  padding: 15px;
 
+.footer_social > ul {
+  list-style: none;
+  display: flex;
+}
+
+#menu{
+  padding: 15px;
   display: block;
   list-style-type: none;
   position: absolute;
   width: 100%;
   background-color:#f9ce9f;
 }
+
 #navbar > a{
   text-decoration: none;
   color: black;
   font-size: 20px;
 }
+
 .meny{
-  display:inline;
+  display: inline;
   text-align: center;
   padding: 14px 16px;
 }
+
 #navbar a:hover {
     background-color: #fce5cdff;
 }
