@@ -143,11 +143,10 @@ p {
 
 #navbar a {
   color: #231f20;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 48px;
   text-transform: uppercase;
-  padding: 30px 20px 30px 20px;
+  padding: 10px 20px 0px 20px;
 }
 
 #navbar a:hover {
@@ -155,28 +154,7 @@ p {
   color: black;
 }
 
-
-/*#navbar {
-  margin: 0 0 0 0;
-  padding: 25px;
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  position: fixed;
-  width: 60%;
-  background-color:#f9ce9f;
-  text-transform: uppercase;
+#bilde_fillipo {
+  max-width: 100px;
+  max-height: 100px;
 }
-
-#navbar > a {
-  text-decoration: none;
-  color: #231f20;
-  font-size: 48px;
-  letter-spacing: 2px;
-  padding: 0 20px 0 20px;
-}
-
-
-#navbar a:hover {
-    background-color: #fce5cdff;
-}*/
