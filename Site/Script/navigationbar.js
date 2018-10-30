@@ -1,7 +1,10 @@
 menybar=["Booking", "Meny", "Våre restauranter"]
 function addmenu(){
   targetElement= document.querySelector("#navbar");
+<<<<<<< HEAD
   console.log(i)
+=======
+>>>>>>> 932eff6a3ffb7e430247c1d4839795f004e849cd
   const laga = document.createElement("a");
   laga.appendChild(document.createTextNode(menybar[i]));
   laga.setAttribute("class","meny")
