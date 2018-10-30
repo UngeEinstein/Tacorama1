@@ -1,3 +1,4 @@
+<<<<<<< current
 body {
   background-color: #fce5cdff;
   font-family: "Bubbler One";
@@ -140,3 +141,23 @@ p {
 a:hover {
     background-color: #fce5cdff;
 }
+=======
+body {
+  width: 68%;
+  margin: auto;
+  background-color: #fce5cdff;
+}
+
+p {
+  font-family: Verdana;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  display: inline;
+}
+
+.foot {
+  right: 10;
+}
+>>>>>>> before discard

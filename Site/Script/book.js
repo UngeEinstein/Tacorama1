@@ -17,7 +17,7 @@ function show(value) { //funksjon til å åpne form når restaurant blir valgt
 
 }
 function display() {
-  DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200,list-style=none,')
+  DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200,list-style=none')
   message = "<ul><li><b>Navn: </b>" + document.getElementById("Navn").value;
   message += "<li><b>Etternavn: </b>" + document.getElementById("Enavn").value;
   message += "<li><b>E-post: </b>" + document.getElementById("e-post").value;
