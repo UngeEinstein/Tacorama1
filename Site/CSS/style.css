@@ -118,6 +118,7 @@ p {
   margin: 3% 7% 1% 7%;
   border-top: 1.5px solid black;
 }
+<<<<<<< HEAD
 
 .footer_social > ul {
   list-style: none;
@@ -125,6 +126,9 @@ p {
 }
 
 #menu{
+=======
+#navbar{
+>>>>>>> 248b725fe6ac505e698d99970dff217def589754
   padding: 15px;
 
   display: block;
@@ -143,6 +147,6 @@ p {
   text-align: center;
   padding: 14px 16px;
 }
-a:hover {
+#navbar a:hover {
     background-color: #fce5cdff;
 }
