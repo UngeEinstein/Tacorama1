@@ -11,14 +11,6 @@ body {
   position: relative;
 }
 
-.slideshow_content {
-  width: 100%;
-}
-
-.mySlides {
-  display: none;
-}
-
 #forsidebilde {
   width: 100%;
 }
@@ -47,24 +39,24 @@ body {
   text-decoration: none;
 }
 
-/* FIKSER DETTE SENERE!
-h2::after {
+/* Skal vi ha dette med?
+h1::after {
   left: 5%;
 }
 
-h2::before {
+h1::before {
   right: 5%;
 }
 
-h2::after, h2::before {
+h1::after, h1::before {
   content: " ";
   position: absolute;
-  height: 0.2rem;
-  width: 30%;
-  top: 1.5%;
-  background-color: black;
-}
-*/
+  height: 0.15rem;
+  width: 20%;
+  top: 3.5%;
+  background-color: #b73d0f;
+} */
+
 
 .index_row_img {
   display: flex;
@@ -78,6 +70,7 @@ h2::after, h2::before {
 
 
 h1 {
+  padding-top: 30px;
   font-size: 48px;
   text-align: center;
   text-transform: uppercase;
@@ -110,7 +103,7 @@ p {
   position: relative;
 
 }
-footer > ul {
+.footer_info > ul {
   display: flex;
   list-style: none;
   align-items: center;
