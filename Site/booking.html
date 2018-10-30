@@ -18,7 +18,7 @@
     </ul>
     <h1> Bordbestilling </h1>
     <div class="booking-form">
-      <form action:"Script/book.js" method="post">
+      <form action:"Script/book.js" method="post" onsubmit="display()">
 
         <select class="select" onchange="show(this.options[this.selectedIndex].value)"id="selectform">
           <option value="loc0"> Velg restaurant </option>
@@ -43,7 +43,7 @@
           <input type="number" id="tlf" min="8" required>
 
           <label name="datb"> Ønsket dato: </label>
-          <input type="date" id="minDate" required>
+          <input type="date" id="minDate">
 
           <label name="tid"> Hvilket tidspunkt passer best?</label>
           <input type="time" name="time" min="11:00 AM" max="23:00 PM" id="tid" required>
@@ -52,7 +52,7 @@
 
           <label name="komment"> Kommentarer: </label>
           <textarea rows="4" cols="30" id="kom"></textarea> <br>
-          <input type="submit" id="submit" onClick="display();" value="Display"></submit>
+          <input type="submit" id="submit" value="Display"></submit>
 
       </form>
     </div>
@@ -76,7 +76,7 @@
 <iframe src="footer.html"width="100%" scrolling="no" style="border:none;"></iframe>
 
   <script src="Script/book.js"></script>
-  <script src="Script/menu.js"></script>
+  <script src="Script/navigationbar.js"></script>
 </body>
 
 </html>
