@@ -126,19 +126,22 @@ footer > ul {
   border-top: 1.5px solid black;
 }
 #menu{
+  padding: 15px;
+
   display: block;
   list-style-type: none;
+  position: absolute;
+  width: 100%;
+  background-color:#f9ce9f;
+}
+#menu > a{
+  text-decoration: none;
 }
 .meny{
   display:inline;
   text-align: center;
   padding: 14px 16px;
 }
-<<<<<<< HEAD
 a:hover {
-    background-color: # #f9ce9f;
-=======
-.meny li:hover {
-    background-color: #111;
->>>>>>> 9803afc9c42577356c216bc9d4a5e2e2add7e79a
+    background-color: #fce5cdff;
 }
