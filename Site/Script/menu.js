@@ -1,12 +1,12 @@
-meny=["Booking", "Meny", "Våre restauranter"]
+menybar=["Booking", "Meny", "Våre restauranter"]
 
 function addmenu(){
-  targetElement= document.querySelector("#menu");
+  targetElement= document.querySelector("#navbar");
 
   const laga = document.createElement("a");
-  laga.appendChild(document.createTextNode(meny[i]));
+  laga.appendChild(document.createTextNode(menybar[i]));
   laga.setAttribute("class","meny")
-  for (i in meny){
+  for (i in menybar){
     if (i = 1)
       laga.setAttribute("href", "/booking.html")
     else if (i = 2)
@@ -17,6 +17,6 @@ function addmenu(){
 
   targetElement.appendChild(laga);
 }
-for (i in meny){
+for (i in menybar){
     addmenu(i)
 }
