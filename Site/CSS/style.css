@@ -137,6 +137,6 @@ p {
   text-align: center;
   padding: 14px 16px;
 }
-a:hover {
+#navbar a:hover {
     background-color: #fce5cdff;
 }
