@@ -93,18 +93,18 @@ p {
   line-height: 28px;
 }
 
-.hovedb label {
+.booking-form label {
     display: block;
     font-size: 20px;
 }
-.hovedb input, select, textarea {
+.booking-form input, select, textarea {
   border: 1px solid #999;
   border-radius: 10px;
   padding: 0.6em;
   font-family: "Bubbler One";
   font-size: 20px;
 }
-.hovedb {
+.booking-form {
   text-align: center;
   margin: auto;
   position: relative;
