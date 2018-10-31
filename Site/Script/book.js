@@ -16,8 +16,6 @@ function myFunction() {
   document.getElementById("submit").submit();
 
 }
-var form = document.getElementById("form");
-var isValidForm = form.checkValidity();
 
 function display() {
     DispWin = window.open('', 'NewWin', 'toolbar=no,status=no,width=300,height=200,list-style=none')
