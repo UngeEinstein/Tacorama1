@@ -11,11 +11,6 @@
 
 <body>
   <div class="content">
-    <ul id="navbar">
-      <a class="meny" href="./index.html">
-        <img id="logo" src="./IMG/Logo/Logo.png" alt="Logo">
-      </a>
-    </ul>
     <h1> Bordbestilling </h1>
     <div class="booking-form">
       <form action:"Script/book.js" method="post" onsubmit="display()">
@@ -26,6 +21,11 @@
           <option value="loc3"> Tyskebryggen </option>
           <option value="loc4"> Majorstuen </option>
         </select>
+        <ul id="navbar">
+          <a class="meny" href="./index.html">
+            <img id="logo" src="./IMG/Logo/Logo.png" alt="Logo">
+          </a>
+        </ul>
 
         <div class="inputvalg" id="form" style="display:none">
 
@@ -51,7 +51,7 @@
 
           <label name="komment"> Kommentarer: </label>
           <textarea rows="4" cols="30" id="kom"></textarea> <br>
-          <input type="submit" id="submit" value="Display"></submit>
+          <input type="submit" id="submit" value="Bestill"></submit>
 
       </form>
     </div>
