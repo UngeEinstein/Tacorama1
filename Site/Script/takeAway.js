@@ -109,14 +109,16 @@ function confirmOrder(){
   const customerNumber=document.getElementById("phoneNumber").value;
   const pickUpLocation=document.getElementById("pickUp").value;
   const pickUpHours=document.getElementById("pickUpTime").value;
+  const getInputs = document.querySelectorAll(".orderInput");
 
   document.getElementById("personalInfo").innerHTML= "Din Bestilling er bekreftet!"+ "<br></br>"+ "Din mat hentes på: "+ pickUpLocation+"<br>" + "klokken: " + pickUpHours;
-  const getInputs = document.querySelectorAll(".orderInput");
   console.log(getInputs.length);
   for (var i = 0; i < getInputs.length; i++) {
     console.log(i);
     getInputs[i].style.display="none";
   }
+  document.getElementById("orderbtns").style.display="none";
+
 
 
 
