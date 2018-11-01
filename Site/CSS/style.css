@@ -107,7 +107,19 @@ h1::after, h1::before {
   padding: 80px;
   position: relative;
 }
-
+.confirmation-booking {
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+.info-booking {
+  display: block;
+  float: left;
+}
+.data-booking {
+  display: block;
+  float: right;
+}
 /* CSS footer*/
 .footer_info > ul {
   display: flex;

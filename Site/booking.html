@@ -14,7 +14,7 @@
     <h1> Bordbestilling </h1>
     <div class="booking-form">
       <form action:"Script/book.js" method="post" onsubmit="display()">
-        <select class="select" onchange="show(this.options[this.selectedIndex].value)"id="selectform">
+        <select class="select" onchange="show(this.options[this.selectedIndex].value)" id="selectform">
           <option value="loc0"> Velg restaurant </option>
           <option value="loc1"> Solsiden, Trondheim </option>
           <option value="loc2"> Tyskebryggen, Bergen </option>
@@ -55,6 +55,7 @@
 
       </form>
     </div>
+
     <div class="booking-restaurant">
       <div class="first-row-booking">
         <h2>Solsiden</h2>
@@ -69,10 +70,24 @@
             <p> Åpningstider: 11:00-23:00 Alle dager <br> tlf: 000 00 000 <br> E-post: Filippo@Tacorama.no <br> Frognergate 15, Oslo <p>
       </div>
     </div>
-  </div>
+    <div class="confirmation-booking" style="display:none">
+      <div class="info-booking">
+        <h3>Restaurant: </h3>
+        <h3>Navn: </h3>
+        <h3>Etternavn: </h3>
+        <h3>E-mail: </h3>
+        <h3>Telefonnummer: </h3>
+        <h3>Ønsket dato: </h3>
+        <h3>Klokkeslett: </h3>
+        <h3>Kommentar: </h3>
+
+      </div>
+      <div class="data-booking">
+      </div>
+    </div>
   </div>
 
-<iframe src="footer.html"width="100%" scrolling="no" style="border:none;"></iframe>
+  <iframe src="footer.html" width="100%" scrolling="no" style="border:none;"></iframe>
   <script src="Script/book.js"></script>
   <script src="Script/navigationbar.js"></script>
 </body>
