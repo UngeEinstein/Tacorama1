@@ -3,28 +3,21 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="IMG/Logo/Logo.png">
   <link rel="stylesheet" href="CSS/style.css">
-  </style>
   <link href='https://fonts.googleapis.com/css?family=Bubbler One' rel='stylesheet'>
   <title>Tacorama</title>
 </head>
 
 <body>
 
+    <div class="index_start_img">
+      <img src="IMG/index/startbilde_taco.png" alt="Forsidebilde av taco." id="forsidebilde">
+      <div class="index_start_img_content"> <a href="./booking.html" id="make_a_booking_link"> Make a booking </a></div>
+    </div>
 
-
-  <div class="index_start_img">
-    <img src="IMG/index/startbilde_taco.png" alt="Forsidebilde av taco." id="forsidebilde">
-    <div class="index_start_img_content"> <a href="./booking.html" id="make_a_booking_link"> Make a booking </a></div>
-  </div>
 
   <div class="index_content">
-
-    <ul id="navbar">
-      <a class="meny" href="./index.html">
-        <img id="logo" src="./IMG/Logo/Logo.png" alt="Logo">
-      </a>
-    </ul>
 
     <div class="index_about_us">
       <h1>Dette er oss</h1>
@@ -37,16 +30,15 @@
         imøtekommende servitører, dyktige kokker, uformell stemning og hyggelige omgivelser.
         På den måten har vi hentet det beste av Mexico til oss.</p> <br>
 
-      <div class="index_row_img">
-        <div class="index_column_img">
-          <img src="IMG/index/fajitas.jpg" alt="Fajitas" style="width: 100%;">
+        <div class="index_row_img">
+          <div class="index_first_row_img">
+            <img src="IMG/index/fajitas.jpg" alt="Fajitas" style="width: 49%;">
+            <img src="IMG/index/nachos1.jpg" alt="Nachos" id="img_nachos1" style="width: 49%;">
+          </div>
         </div>
-        <div class="index_column_img">
-          <img src="IMG/index/nachos1.jpg" alt="Nachos" style="width: 100%">
-        </div>
-      </div>
 
     </div>
+
     <div class="index_about_meny">
       <h1>Menyen</h1>
       <p>På vår meny vil man finne smaker inspirert fra det meksikanske kjøkkenet. Man kan forvente råvarer i førsteklasses kvalitet,
@@ -56,21 +48,26 @@
         Du finner tradisjonelle tacoer, og tacoer med en ny, moderne vri. Vi serverer også vegetarianske og veganske retter.
         Her finner du altså noe for enhver smak. Vi serverer også meget god drikke akkompagnert med maten. Vi kan sterkt anbefale vår
         hjemmebrygget vin – inspirert fra Mexico med en liten tvist.</p>
-    </div>
 
-    <div class="index_row_img">
-      <div class="index_column_img">
-        <img src="IMG/index/three_tacos.png" alt="Fajitas" style="width: 100%;">
-      </div>
-      <div class="index_column_img">
-        <img src="IMG/index/nachos.jpg" alt="Nachos" style="width: 100%">
-      </div>
+        <div class="index_row_img">
+          <div class="index_second_row_img">
+            <img src="IMG/index/three_tacos.png" alt="Fajitas" style="width: 49%;">
+            <img src="IMG/index/nachos.jpg" alt="Nachos" id="img_nachos2" style="width: 49%;">
+          </div>
+        </div>
     </div>
   </div>
 
+
+  <ul id="navbar">
+    <a class="meny" href="./index.html">
+      <img id="logo" src="./IMG/Logo/Logo.png" alt="Logo">
+    </a>
+  </ul>
+
 <iframe src="footer.html"width="100%" scrolling="no" style="border:none;"></iframe>
 
-  <script type="text/javascript" src="script/navigationbar.js"></script>
+  <script src="script/navigationbar.js"></script>
   <script src="Script/index.js"></script>
 
 </body>
