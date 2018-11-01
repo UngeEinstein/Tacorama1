@@ -110,8 +110,19 @@ function confirmOrder(){
   const pickUpLocation=document.getElementById("pickUp").value;
   const pickUpHours=document.getElementById("pickUpTime").value;
   const getInputs = document.querySelectorAll(".orderInput");
+  const makeP = document.createElement('P')
+  const personalInfo = document.getElementById('personalInfo');
 
-  document.getElementById("personalInfo").innerHTML= "Din Bestilling er bekreftet!"+ "<br></br>"+ "Din mat hentes på: "+ pickUpLocation+"<br>" + "klokken: " + pickUpHours;
+  document.getElementById('orderForm').style.display="none";
+  personalInfo.appendChild(makeP);
+  makeP.setAttribute("id","confirmationText");
+  makeP.innerHTML="Din Bestilling er bekreftet!"+ "<br></br>"+ "Din mat hentes på: "+ pickUpLocation+"<br>" + "klokken: " + pickUpHours;
+
+  //document.getElementById("orderText").innerHTML="Din Bestilling er bekreftet!"+ "<br></br>"+ "Din mat hentes på: "+ pickUpLocation+"<br>" + "klokken: " + pickUpHours;
+
+
+//  document.getElementById("personalInfo").innerHTML=
+
   console.log(getInputs.length);
   for (var i = 0; i < getInputs.length; i++) {
     console.log(i);
@@ -119,9 +130,15 @@ function confirmOrder(){
   }
   document.getElementById("orderbtns").style.display="none";
 
+}
 
-
+function revealNumber(){
+  document.getElementById("reveal").addEventListener("click", displayDate)
+  let selectInput= document.querySelector('input');
+  selectInput.style.display="inline-block";
+  selectInput.value++;
 
 }
+
 
 //

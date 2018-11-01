@@ -5,18 +5,22 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="CSS/style.css">
     </style>
+    <link href="https://fonts.googleapis.com/css?family=Bubbler One" rel="stylesheet">
     <title></title>
 </head>
 
 <body>
   <div id="menuContainer">
-    <div class=menuRow1>
+    <div id=menuRow1>
 
-        <div class="foodDish">
+        <div class="foodDish" id="row1-1">
             <h2 class="title"> Mexican Fiesta</h2>
+          <!--  <button type onclick="revealNumber()" class="reveal" id="reveal">Bestill+</button> -->
 
-            <input class="orderInput" oninput="addItemToCart('Mexican Fiesta', 120,this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+            <input class="orderInput" onchange="addItemToCart('Mexican Fiesta', 120,this.value)" type="number" min="0" max="100" value="0" onkeydown="return false"/>
+
             <h1 class="price">120,-</h2>
+                  <img class="menuPic" src="startbilde_taco.png"></img>
 
 
 
@@ -25,49 +29,55 @@
         </div>
 
 
-        <div class="foodDish">
+        <div class="foodDish" id="row1-2">
             <h2 class="title">Fredagstaco</h2>
 
                 <input class="orderInput" oninput="addItemToCart('Fredagstaco', 99,this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
                 <h1 class="price">99,-</h2>
+
+                <img class="menuPic" src="norwegian-taco.jpg"></img>
                 <p class="description">Norsk fredagstaco. Happy 17.mai maddafakkas</p>
 
 
         </div>
-
-        <div class="foodDish">
+      </div>
+      <div id="menuRow2">
+        <div class="foodDish" id="row1-3">
             <h2 class="title"> Taco Escobar </h2>
 
 
                 <input class="orderInput" oninput="addItemToCart('Taco Escobar',130, this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
                 <h1 class="price">130,-</h2>
+                  <img class="menuPic" src="burrito.jpg"></img>
 
                 <p class="description">Som Mexican fiesta, bare med mere kokain og våpen</p>
 
 
         </div>
 
-    </div>
 
-    <div class="menuRow2">
 
         <div class="foodDish">
             <h2 class="title">Supernachos</h2>
 
 
-                <input class="orderInput" oninput="addItemToCart('Super Nachos', 110,1)" type="number" min="0" max="100" value="0" onkeydown="return false">
+                <input class="orderInput" oninput="addItemToCart('Super Nachos', 110, this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
                 <h1 class="price">110,-</h2>
+                  <img class="menuPic" src="wall.jpg"></img>
                 <p class="description">Rett og slett jævlig mye nachos. SuperHappyMeal™ følger med</p>
 
 
         </div>
+      </div>
 
+      <div id="menuRow3">
         <div class="foodDish">
             <h2 class="title">The Wall</h2>
 
 
               <input class="orderInput" oninput="addItemToCart('The Wall', 150,this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
               <h1 class="price">150,-</h2>
+                <img class="menuPic" src="tacito.jpg"></img>
                 <p class="description">En vegg av taco, passer for 15 personer, eller en trønder</p>
 
         </div>
@@ -78,7 +88,8 @@
 
               <input class="orderInput" oninput="addItemToCart('Fillipos Fajitas', 120,this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
               <h1 class="price">149,-</h2>
-                <p class="description">Filippos Fajitas ddklsa dsløakdlsaø dølask addsa</p>
+                <img class="menuPic" src="fajitas.jpg"></img>
+                <p class="description">Filippos Fajitas.</p>
 
         </div>
       </div>
@@ -107,7 +118,7 @@
             <div class="orderInfo" id="personalInfoContainer">
               <div id="personalInfo">
 
-                <form action="" method="post">
+                <form action="" method="post" id="orderForm">
 
                 Navn:
                 <br>
@@ -132,32 +143,24 @@
                 Hentetidspunk (idag kl.):
                 <br>
                 <input type="time" id="pickUpTime"
-               min="09:00" max="18:00" required>
+               min="9:00" max="18:00" required>
                 <br><br>
 
 
-              </form>
+
             </div>
           </div>
         </div>
         <div id="orderConfirmation">
             <input type="button" id="orderbtns" type="submit" onclick="confirmOrder()" value="Bekreft Bestilling"></input>
         </div>
-
-        <ul id="navbar">
-          <a class="meny" href="./index.html">
-            <img id="logo" src="./IMG/Logo/Logo.png" alt="Logo">
-          </a>
-        </ul>
-
-
+    </form>
 
 
 
 
 
 <script src="script/takeAway.js"></script>
-<script src="script/navigationbar.js"></script>
 </body>
 
 </html>
