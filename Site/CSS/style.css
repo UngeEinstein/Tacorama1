@@ -133,7 +133,7 @@ p {
 }
 
 
-/* CSS navbar */
+/* CSS navbar MÅ FÅ NAVBAREN TIL Å KRYMPE MED SKJERMEN*/
 #navbar {
   position: fixed;
   top: 0;
@@ -168,44 +168,66 @@ p {
 
 #menuContainer{
   position: relative;
-  width:95%;
-  height:70%;
+  display:inline-block;
+  width:90%;
   left:5%;
+  right:5%;
 
 
 
 }
 
-.menuRow1{
+#menuRow1{
   display:inline-block;
-  width:45%;
-
-
-
+  width:30%;
+  min-height: 200px;
+  float: left;
 
 
 
 }
 
-.menuRow2{
+#menuRow2{
   display:inline-block;
-  width:45%;
+  width:30%;
+  min-height: 200px;
+  margin-left: 5%;
+  margin-right: 5%;
 
-
-
+}
+#menuRow3{
+  display:inline-block;
+  width:30%;
+  min-height: 200px;
+  float:right;
 
 
 }
+
 
 .foodDish {
-  border: 1px grey solid;
+  border: 2px black solid;
+  min-height: 400px;
+  margin-top:5%;
+  background-color: #f4b171;
 }
 
+.foodDish:hover{
+  background-color: #f6c9a2;
+}
+
+
+
+
+
 .title{
-  display:inline;
+  display: inline-block;
   font-family: "Bubbler One";
   letter-spacing: 2px;
 
+}
+h2.title{
+  display: inline-block;
 }
 
 .price{
@@ -214,6 +236,7 @@ p {
   text-align: left;
   font-size: 20px;
   margin-top: 0%;
+  color:#ff3300;
 }
 
 .bestillButton {
@@ -227,6 +250,7 @@ p {
   position:relative;
   text-align: left;
   font-size: 20px;
+  width:100%;
 
 
 }
@@ -244,12 +268,35 @@ p {
   width:7%;
 }
 
+
+
+.reveal{
+
+  display: inline-block;
+  background-color: #ca422d;
+  border: 1px solid #999;
+  border-radius: 10px;
+  padding: 0.6em;
+  font-family: "Bubbler One";
+  font-size: 12px;
+  margin-left: 20%;
+
+}
+
+
 .orderInput{
   position: relative;
-  display:inline;
+  display: inline-block;
+  margin-top: 7%;
   float:right;
-  right:10%;
+
+
 }
+
+
+
+  /*inline */
+
 
 /*
 menuContainer{
@@ -283,7 +330,7 @@ menuContainer{
   display:inline-block;
   width:35%;
   border:1px #ccc solid;
-  background-color: #f4b171;
+  background-color: #fff280;
   min-height: 269px;
   float:left;
   text-align: right;
@@ -309,7 +356,7 @@ menuContainer{
   display:inline-block;
   width:35%;
   border:1px #ccc solid;
-  background-color: #fee49d;
+  background-color: #ffb594;
   margin-left: 0.5%;
   text-align: left;
 
@@ -322,6 +369,10 @@ menuContainer{
   margin-left: 1%;
   min-height: 50%;
 }
+
+
+
+
 
 
 #orderList{
@@ -339,11 +390,35 @@ menuContainer{
   margin-bottom:0%;
   background-color: #ca422d;
   border: 1px solid #999;
-border-radius: 10px;
-padding: 0.6em;
-font-family: "Bubbler One";
-font-size: 20px;
+  border-radius: 10px;
+  padding: 0.6em;
+  font-family: "Bubbler One";
+  font-size: 20px;
 
 }
+
+#confirmationText {
+  text-align: left;
+}
+
+#row1-1{
+
+}
+#row1-2{
+
+}
+#row1-3{
+
+}
+
+.menuPic {
+  position:relative;
+  display: block;
+  left:20%;
+  right:20%;
+  width:60%;
+  overflow: hidden;
+}
+
 
 /* Arnsstein */
