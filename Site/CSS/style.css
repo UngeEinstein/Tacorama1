@@ -86,7 +86,7 @@ p {
   padding: 80px;
   position: relative;
 }
-<<<<<<< HEAD
+
 .confirmation-booking {
   text-align: center;
   margin: auto;
@@ -100,10 +100,7 @@ p {
   display: block;
   float: right;
 }
-=======
 
-
->>>>>>> 0db086a3a564cb5bdede5aeb51d1c2a36d39819b
 /* CSS footer*/
 .footer_info li {
   display: inline-block;
