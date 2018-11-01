@@ -131,7 +131,7 @@ h1::after, h1::before {
 }
 
 /* CSS navbar */
-#navbar {
+#navbar {  /*MÅ FÅ TIL AT NAVBAREN BLIR MINDRE MED SIDENs*/
   background-color: #fce5cdff;
   /*border-bottom: 1.5px solid black;*/
   display: flex;
@@ -139,8 +139,10 @@ h1::after, h1::before {
   margin: 0 0 0 0;
   top: 0;
   width: 100%;
-  justify-content: center;
+  /*justify-content: center;*/
+  padding: 0 20% 0 22%;
   left: 0;
+
 }
 
 #navbar a {
