@@ -165,10 +165,35 @@ p {
   max-height: 100px;
 }
 /*våre restauranter*/
+#restContainer{
+  top: 100px;
+  width:90%;
+  left:5%;
+  right:5%;
+  position: relative;
+}
+.rest_loc{
 
+}
+#rest_row1{
+  width: 50%;
+  display: inline-block;
+  float:left;
+  text-align: center;
+}
+#rest_row2{
+  width: 50%;
+  display: inline-block;
+  float: right;
+  text-align: center;
+
+
+
+}
 /* Arnstein */
 
 #menuContainer{
+  top:100px;
   position: relative;
   display:inline-block;
   width:90%;
