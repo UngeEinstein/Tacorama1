@@ -12,15 +12,20 @@ function show(value) { //funksjon til å åpne form når restaurant blir valgt
   }
 }
 
-
 function display() {
-    DispWin = window.open('', 'NewWin', 'toolbar=no,status=no,width=300,height=200,list-style=none')
-    message = "<b>   Bestillingen er fullført! </b>";
-    message += "<ul><li><b>Navn: </b>" + document.getElementById("Navn").value;
-    message += "<li><b>Etternavn: </b>" + document.getElementById("Enavn").value;
-    message += "<li><b>E-post: </b>" + document.getElementById("e-post").value;
-    message += "<li><b>Telefon: </b>" + document.getElementById("tlf").value;
-    message += "<li><b>Dato: </b>" + document.getElementById("minDate").value;
-    message += "<li><b>Tid: </b>" + document.getElementById("tid").value + "</ul>";
-    DispWin.document.write(message);
+   var newLine = "\r\n"
+   message = "         Bestillingen er fullført!    ";
+   message += newLine;
+   message += "Navn:  " + document.getElementById("Navn").value;
+   message += newLine;
+   message += "Etternavn:  " + document.getElementById("Enavn").value;
+   message += newLine;
+   message += "E-post:  " + document.getElementById("e-post").value;
+   message += newLine;
+   message += "Telefon:  " + document.getElementById("tlf").value;
+   message += newLine;
+   message += "Dato:  " + document.getElementById("minDate").value;
+   message += newLine;
+   message += "Tid:  " + document.getElementById("tid").value;
+   alert(message);
 }
