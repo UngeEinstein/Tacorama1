@@ -172,20 +172,23 @@ p {
   right:5%;
   position: relative;
 }
-.rest_loc{
-
+.rest_text{
+  margin-top: 0;
 }
 #rest_row1{
   width: 50%;
   display: inline-block;
   float:left;
   text-align: center;
+  min-height: 1000px;
 }
 #rest_row2{
   width: 50%;
   display: inline-block;
   float: right;
   text-align: center;
+  min-height: 1000px;
+
 
 
 
