@@ -141,12 +141,6 @@ p {
 
 /* CSS navbar MÅ FÅ NAVBAREN TIL Å KRYMPE MED SKJERMEN*/
 
-@media only screen and (max-width: 885px) {
-  #navbar a:not(:first-child){
-    display: none;
-  }
-}
-
 #navbar {
   position: fixed;
   top: 0;
@@ -176,6 +170,19 @@ p {
 #logo {
   max-width: 100px;
   max-height: 100px;
+}
+
+@media only screen and (max-width: 885px) {
+  #navbar a:not(:first-child){
+    display: none;
+    font-size: 20px;
+  }
+  #navbar:hover .meny {
+    display: block;
+  }
+  #navbar a:hover:not(:first-child) {
+    font-size: 24px;
+  }
 }
 /*våre restauranter*/
 #restContainer{
