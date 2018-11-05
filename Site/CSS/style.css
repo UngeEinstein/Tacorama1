@@ -46,6 +46,12 @@ p {
   text-align: center;
 }
 
+@media only screen and (max-width: 900px) {
+  .index_start_img_content {
+    display: none;
+  }
+}
+
 #make_a_booking_link {
   color: #b73d0f;
   letter-spacing: 5px;
@@ -68,6 +74,14 @@ p {
 .booking_content{
   position: relative;
   top: 100px;
+  text-align: center;
+  margin: auto;
+
+}
+.booking-startinfo {
+  width: 60%;
+  text-align: center;
+  margin: auto;
 }
 .booking-form label {
     display: block;
@@ -134,6 +148,7 @@ p {
 
 
 /* CSS navbar MÅ FÅ NAVBAREN TIL Å KRYMPE MED SKJERMEN*/
+
 #navbar {
   position: fixed;
   top: 0;
@@ -164,8 +179,48 @@ p {
   max-width: 100px;
   max-height: 100px;
 }
-/*våre restauranter*/
 
+@media only screen and (max-width: 885px) {
+  #navbar a:not(:first-child){
+    display: none;
+    font-size: 20px;
+  }
+  #navbar:hover .meny {
+    display: block;
+  }
+  #navbar a:hover:not(:first-child) {
+    font-size: 24px;
+  }
+}
+/*våre restauranter*/
+#restContainer{
+  top: 100px;
+  width:60%;
+  left:20%;
+  right:20%;
+  position: relative;
+}
+.rest_text{
+  margin-top: 0;
+}
+#rest_row1{
+  width: 50%;
+  display: inline-block;
+  float:left;
+  text-align: center;
+  min-height: 1000px;
+}
+#rest_row2{
+  width: 50%;
+  display: inline-block;
+  float: right;
+  text-align: center;
+  min-height: 1000px;
+
+
+
+
+}
 /* Arnstein */
 
 #menuh1 {
@@ -173,6 +228,7 @@ p {
 }
 
 #menuContainer{
+  top:100px;
   position: relative;
   display:inline-block;
   width:60%;
