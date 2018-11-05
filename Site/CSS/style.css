@@ -68,6 +68,11 @@ p {
 .booking_content{
   position: relative;
   top: 100px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  width: 60%;
+
 }
 .booking-form label {
     display: block;
