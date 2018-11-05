@@ -13,9 +13,9 @@
   <div class="booking_content">
     <h1> Bordbestilling </h1>
     <div class="booking-form">
-      <form method="get" onsubmit="display()"onchange="display(this.value)" id="booking-form">
-        <select class="select"  id="selectform">
-          <option value="" selected> Velg restaurant </option>
+    <form action:"Script/book.js" method="post" onsubmit="display()">
+        <select class="select" onchange="show(this.options[this.selectedIndex].value)" id="selectform">
+          <option value="loc0" selected> Velg restaurant </option>
           <option value="loc1"> Solsiden, Trondheim </option>
           <option value="loc2"> Tyskebryggen, Bergen </option>
           <option value="loc3"> Grønland, Oslo </option>
@@ -46,12 +46,12 @@
 
           <label> Kommentarer: </label>
           <textarea rows="4" cols="30" id="kom"></textarea> <br>
-          <input type="submit" id="submit" value="Bestill">
+          <input type="submit" id="booking-form" value="Bestill">
     </div>
     </form>
-    <div class="booking-resultat">
-      <p> Resultat </p>
-      <ul id='tech'>
+    <div class="resultat_booking">
+      <h1> Resultat </h1>
+      <ul id="tech">
       </ul>
     </div>
     <div class="booking-startinfo">

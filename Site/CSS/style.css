@@ -78,10 +78,10 @@ p {
   margin: auto;
 
 }
-.booking-resultat {
+#booking-resultat {
   width: 60%;
   text-align: center;
-  margin: auto;  
+  margin: auto;
 }
 .booking-startinfo {
   width: 60%;

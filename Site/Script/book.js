@@ -1,34 +1,31 @@
 const dateElement = document.getElementById("minDate"); //setter dato til idag.
-let d = new Date();
-console.log(d.getHours());
-dateElement.setAttribute("min", d.toJSON().split('T')[0])
-var div = document.getElementById('inputval');
+ let d = new Date();
+ console.log(d.getHours());
+ dateElement.setAttribute("min", d.toJSON().split('T')[0])
+ var div = document.getElementById('inputval');
 
-
-function display(value) {
-  if (value=='') {
-      return document.getElementById('form').style.display = 'none';
-    }
-  else {
-      return document.getElementById('form').style.display = 'block';
-    }
-    confirmOrder();
+ function show(value) { //funksjon til å åpne form når restaurant blir valgt
+   if (value !== "loc0") {
+     document.getElementById("form").style.display = 'initial';
+   } else {
+     document.getElementById("form").style.display = 'none';
   }
-function confirmOrder() {
-  const technologies = [
-    document.getElementById("Navn").value,
-    document.getElementById("Enavn").value,
-    document.getElementById("e-post").value,
-    document.getElementById("tlf").value,
-    document.getElementById("minDate").value,
-    document.getElementById("tid").value,
-];
-var tech = document.getElementById("tech");
-for (let i = 0; i < technologies.length; i++){
-  console.log(technologies[i]);
-  let li = document.createElement ("LI");
-  let text = document.createTextNode(technologies[i]);
-  li.appendChild(text);
-  tech.appendChild(li);
 }
+function display() {
+
+  var newLine = "\r\n"
+  message = "         Bestillingen er fullført!    ";
+  message += newLine;
+  message += "Navn:  " + document.getElementById("Navn").value;
+  message += newLine;
+  message += "Etternavn:  " + document.getElementById("Enavn").value;
+  message += newLine;
+  message += "E-post:  " + document.getElementById("e-post").value;
+  message += newLine;
+  message += "Telefon:  " + document.getElementById("tlf").value;
+  message += newLine;
+  message += "Dato:  " + document.getElementById("minDate").value;
+  message += newLine;
+  message += "Tid:  " + document.getElementById("tid").value;
+  alert(message);
 }
