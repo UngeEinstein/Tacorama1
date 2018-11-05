@@ -76,9 +76,12 @@ p {
   top: 100px;
   text-align: center;
   margin: auto;
-  position: relative;
-  width: 60%;
 
+}
+.booking-startinfo {
+  width: 60%;
+  text-align: center;
+  margin: auto;
 }
 .booking-form label {
     display: block;
