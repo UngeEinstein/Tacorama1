@@ -46,6 +46,12 @@ p {
   text-align: center;
 }
 
+@media only screen and (max-width: 900px) {
+  .index_start_img_content {
+    display: none;
+  }
+}
+
 #make_a_booking_link {
   color: #b73d0f;
   letter-spacing: 5px;
@@ -139,6 +145,7 @@ p {
 
 
 /* CSS navbar MÅ FÅ NAVBAREN TIL Å KRYMPE MED SKJERMEN*/
+
 #navbar {
   position: fixed;
   top: 0;
@@ -169,12 +176,25 @@ p {
   max-width: 100px;
   max-height: 100px;
 }
+
+@media only screen and (max-width: 885px) {
+  #navbar a:not(:first-child){
+    display: none;
+    font-size: 20px;
+  }
+  #navbar:hover .meny {
+    display: block;
+  }
+  #navbar a:hover:not(:first-child) {
+    font-size: 24px;
+  }
+}
 /*våre restauranter*/
 #restContainer{
   top: 100px;
-  width:90%;
-  left:5%;
-  right:5%;
+  width:60%;
+  left:20%;
+  right:20%;
   position: relative;
 }
 .rest_text{
