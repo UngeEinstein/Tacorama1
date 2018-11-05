@@ -183,6 +183,8 @@ p {
   #navbar a:hover:not(:first-child) {
     font-size: 24px;
   }
+
+
 }
 /*våre restauranter*/
 #restContainer{
@@ -200,17 +202,14 @@ p {
   display: inline-block;
   float:left;
   text-align: center;
-  min-height: 1000px;
+  margin-bottom: 5%;
 }
 #rest_row2{
   width: 50%;
   display: inline-block;
   float: right;
   text-align: center;
-  min-height: 1000px;
-
-
-
+  margin-bottom: 5%;
 
 }
 /* Arnstein */
