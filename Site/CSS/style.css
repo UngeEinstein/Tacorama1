@@ -191,6 +191,8 @@ p {
   #navbar a:hover:not(:first-child) {
     font-size: 24px;
   }
+
+
 }
 /*våre restauranter*/
 #restContainer{
@@ -208,28 +210,30 @@ p {
   display: inline-block;
   float:left;
   text-align: center;
-  min-height: 1000px;
+  margin-bottom: 5%;
 }
 #rest_row2{
   width: 50%;
   display: inline-block;
   float: right;
   text-align: center;
-  min-height: 1000px;
-
-
-
+  margin-bottom: 5%;
 
 }
 /* Arnstein */
+
+#menuh1 {
+  margin-top: 8%;
+}
 
 #menuContainer{
   top:100px;
   position: relative;
   display:inline-block;
-  width:90%;
-  left:5%;
-  right:5%;
+  width:60%;
+  left:20%;
+  right:20%;
+  margin-bottom: 3%;
 
 
 
@@ -265,7 +269,7 @@ p {
 
 .foodDish {
   border: 2px black solid;
-  min-height: 400px;
+  min-height: 250px;
   margin-top:5%;
   background-color: #f4b171;
 }
@@ -281,7 +285,7 @@ p {
 .title{
   display: inline-block;
   font-family: "Bubbler One";
-  letter-spacing: 2px;
+  margin-bottom: 0px;
 
 }
 h2.title{
@@ -294,6 +298,7 @@ h2.title{
   text-align: left;
   font-size: 20px;
   margin-top: 0%;
+  padding-top: 0%;
   color:#ff3300;
 }
 
@@ -347,6 +352,9 @@ h2.title{
   display: inline-block;
   margin-top: 7%;
   float:right;
+  border: 1px solid #999;
+  border-radius: 10px;
+  padding: 0.6em;
 
 
 }
@@ -429,7 +437,11 @@ menuContainer{
 }
 
 
-
+p.description{
+  font-size: 10px;
+  letter-spacing: 0px;
+  line-height: 15px;
+}
 
 
 
