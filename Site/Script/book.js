@@ -13,8 +13,8 @@ const dateElement = document.getElementById("minDate"); //setter dato til idag.
 }
 function display() {
 
-  var newLine = "\r\n"
-  message = "         Bestillingen er fullført!    ";
+  var newLine = "\r"
+  message = "         Bestillingen er fullført!  En e-post vil bli sendt som bekreftelse  ";
   message += newLine;
   message += "Navn:  " + document.getElementById("Navn").value;
   message += newLine;
@@ -27,5 +27,7 @@ function display() {
   message += "Dato:  " + document.getElementById("minDate").value;
   message += newLine;
   message += "Tid:  " + document.getElementById("tid").value;
+  message += newLine;
+  message += "Kommentar:  " + document.getElementById("kom").value;
   alert(message);
 }
