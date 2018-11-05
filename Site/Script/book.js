@@ -6,10 +6,15 @@ var div = document.getElementById('inputval');
 
 
 function display(value) {
-  if (value=='')
+  if (value=='') {
       return document.getElementById('form').style.display = 'none';
-  else
+    }
+  else {
       return document.getElementById('form').style.display = 'block';
+    }
+    confirmOrder();
+  }
+function confirmOrder() {
   const technologies = [
     document.getElementById("Navn").value,
     document.getElementById("Enavn").value,
@@ -20,11 +25,10 @@ function display(value) {
 ];
 var tech = document.getElementById("tech");
 for (let i = 0; i < technologies.length; i++){
+  console.log(technologies[i]);
   let li = document.createElement ("LI");
   let text = document.createTextNode(technologies[i]);
   li.appendChild(text);
   tech.appendChild(li);
 }
-display.preventDefault();
-
 }

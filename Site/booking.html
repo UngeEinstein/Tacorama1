@@ -13,7 +13,7 @@
   <div class="booking_content">
     <h1> Bordbestilling </h1>
     <div class="booking-form">
-      <form method="post" onsubmit="display()"onchange="display(this.value)" id="booking-form">
+      <form method="get" onsubmit="display()"onchange="display(this.value)" id="booking-form">
         <select class="select"  id="selectform">
           <option value="" selected> Velg restaurant </option>
           <option value="loc1"> Solsiden, Trondheim </option>
@@ -50,6 +50,7 @@
     </div>
     </form>
     <div class="booking-resultat">
+      <p> Resultat </p>
       <ul id='tech'>
       </ul>
     </div>
