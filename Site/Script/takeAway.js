@@ -160,8 +160,8 @@ function confirmOrder(){
 
 function revealNumber(parent, name){
   parent.childNodes[3].style.display="inline-block";
-  let selectInput= document.querySelector('input');
-  selectInput.value++
+
+
   console.log(parent.childNodes)
  parent.childNodes[3].value++;
   addItemToCart(name, parent.childNodes[3].value);
