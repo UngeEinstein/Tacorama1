@@ -19,10 +19,17 @@
 
         <div class="foodDish" id="row1-1">
             <h2 class="title"> Mexican Fiesta</h2>
+<<<<<<< HEAD
           <button type onclick="revealNumber()" class="reveal" id="reveal">Bestill+</button>
 
             <input class="orderInput" onchange="addItemToCart('Mexican Fiesta', 120,this.value)" type="number" min="0" max="100" value="0" onkeydown="return false"/>
 
+=======
+            <div>
+          <button type onclick="revealNumber(this.parentElement, 'Mexican Fiesta')" class="reveal" id="reveal">Bestill+</button>
+            <input class="orderInput" onchange="addItemToCart('Mexican Fiesta', this.value)" type="number" min="0" max="100" value="0" onkeydown="return false"/>
+          </div>
+>>>>>>> 8e4af237d9f5548050bd64ac108daf66a801de6c
             <h1 class="price">120,-</h2>
                   <img class="menuPic" src="img/meny/mexicanfiesta.png"></img>
 
@@ -35,12 +42,20 @@
 
         <div class="foodDish" id="row1-2">
             <h2 class="title">Fredagstaco</h2>
-
-                <input class="orderInput" oninput="addItemToCart('Fredagstaco', 99,this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+            <div>
+            <button type onclick="revealNumber(this.parentElement,'Fredagstaco')" class="reveal" id="reveal">Bestill+</button>
+                <input class="orderInput" oninput="addItemToCart('Fredagstaco', this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+              </div>
                 <h1 class="price">99,-</h2>
+<<<<<<< HEAD
 
                 <img class="menuPic" src="img/meny/norsktaco.png"></img>
                 <p class="description">En klassisk norsk fredagstaco med masse rømme, guacamole og mild salsa.</p>
+=======
+                    <p class="description">Norsk fredagstaco. Happy 17.mai maddafakkas</p>
+                <img class="menuPic" src="img/meny/norwegian-taco.jpg"></img>
+
+>>>>>>> 8e4af237d9f5548050bd64ac108daf66a801de6c
 
 
         </div>
@@ -48,9 +63,10 @@
       <div id="menuRow2">
         <div class="foodDish" id="row1-3">
             <h2 class="title"> Taco Escobar </h2>
-
-
-                <input class="orderInput" oninput="addItemToCart('Taco Escobar',130, this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+            <div>
+              <button type onclick="revealNumber(this.parentElement,'Taco Escobar')" class="reveal" id="reveal">Bestill+</button>
+                <input class="orderInput" onchange="addItemToCart('Taco Escobar',this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+              </div>
                 <h1 class="price">130,-</h2>
                   <img class="menuPic" src="img/meny/tacoescobar.png"></img>
 
@@ -63,9 +79,10 @@
 
         <div class="foodDish">
             <h2 class="title">Supernachos</h2>
-
-
-                <input class="orderInput" oninput="addItemToCart('Super Nachos', 110, this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+            <div>
+              <button type onclick="revealNumber(this.parentElement,'Super Nachos')" class="reveal" id="reveal">Bestill+</button>
+                <input class="orderInput" oninput="addItemToCart('Super Nachos', this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+              </div>
                 <h1 class="price">110,-</h2>
                   <img class="menuPic" src="img/meny/supernachos.png"></img>
                 <p class="description">Rett og slett jævlig mye nachos. Guacamole, rømme og salsa følger med.</p>
@@ -77,9 +94,10 @@
       <div id="menuRow3">
         <div class="foodDish">
             <h2 class="title">The Wall</h2>
-
-
-              <input class="orderInput" oninput="addItemToCart('The Wall', 150,this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+            <div>
+              <button type onclick="revealNumber(this.parentElement,'The Wall')" class="reveal" id="reveal">Bestill+</button>
+              <input class="orderInput" oninput="addItemToCart('The Wall', this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+            </div>
               <h1 class="price">150,-</h2>
                 <img class="menuPic" src="img/meny/startbilde_taco.png"></img>
                 <p class="description">En vegg av forskjellig typer taco. Passer for 15 personer, eller en trønder.</p>
@@ -87,6 +105,7 @@
         </div>
 
         <div class="foodDish">
+<<<<<<< HEAD
             <h2 class="title">Filippos Fajitas</h2>
 
 
@@ -94,6 +113,17 @@
               <h1 class="price">149,-</h2>
                 <img class="menuPic" src="img/meny/fajitas.png"></img>
                 <p class="description">Filippos favoritt-fajitas servert med kylling, ris, stekte grønnsaker, salsa og guacamole.</p>
+=======
+            <h2 class="title">Fillipos Fajitas</h2>
+              <h1 class="price">149,-</h2>
+            <div>
+              <button type onclick="revealNumber(this.parentElement,'Filippos Fajitas')" class="reveal" id="reveal">Bestill+</button>
+              <input class="orderInput" oninput="addItemToCart('Filippos Fajitas', this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+            </div>
+
+                <img class="menuPic" src="img/meny/fajitas.jpg"></img>
+                <p class="description">Filippos Fajitas.</p>
+>>>>>>> 8e4af237d9f5548050bd64ac108daf66a801de6c
 
         </div>
       </div>
@@ -123,7 +153,7 @@
             <div class="orderInfo" id="personalInfoContainer">
               <div id="personalInfo">
 
-                <form action="" method="post" id="orderForm">
+                <form  method="post" id="orderForm">
 
                 Navn:
                 <br>
@@ -157,20 +187,20 @@
           </div>
         </div>
         <div id="orderConfirmation">
-            <input type="button" id="orderbtns" type="submit" onclick="confirmOrder()" value="Bekreft Bestilling"></input>
+            <input id="orderbtns" type="submit" value="Bekreft Bestilling"></input>
         </div>
     </form>
 
 
-  <ul id="navbar">
-    <a class="meny" href="./index.html">
-      <img id="logo" src="./IMG/Logo/Logo.png" alt="Logo">
-    </a>
-  </ul>
+    <nav id="navbar">
+
+    </nav>
+    <div id="footer_div">
+    </div>
 
 <script src="Script/navigationbar.js"></script>
 <script src="script/takeAway.js"></script>
-<iframe src="footer.html"width="100%" scrolling="no" style="border:none;"></iframe>
+<script type="text/javascript" src="script/footer.js" ></script>
 </body>
 
 </html>

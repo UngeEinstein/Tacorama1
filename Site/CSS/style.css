@@ -77,38 +77,45 @@ p {
 
 
 /* CSS booking.html*/
-.booking_content{
+.booking_content{ /* CSS til hele booking-siden*/
   position: relative;
-  top: 100px;
+  top: 100px; /* for at navbar ikke skal dekke over div*/
   text-align: center;
   margin: auto;
-
+/* satt ikke width til 60% for å kunne ha info om restauranter to og to*/
 }
 .booking-startinfo {
   width: 60%;
-  text-align: center;
   margin: auto;
+}
+.booking_result  {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  font-size: 1.7em;
+  width: 60%;
 }
 .booking-form label {
     display: block;
     font-size: 20px;
 }
-.booking-form input, select, textarea {
+.booking-form input, select, textarea { /* css til form*/
   border: 1px solid #999;
   border-radius: 10px;
   padding: 0.6em;
   font-family: "Bubbler One";
   font-size: 20px;
 }
-.booking-form {
+.booking-form { /* sentrerer hele form*/
   text-align: center;
-  margin: auto;
-  position: relative;
 }
-.first-row-booking, .second-row-booking {
+.first-row-booking, .second-row-booking { /* css til de fire informasjonskapslene til restauranter i booking*/
   display: inline-block;
-  padding: 80px;
-  position: relative;
+  padding-left: 5%;
+
+}
+.booking-restaurant { /* forhindrer kollidering med footer */
+  padding-bottom: 80px;
 }
 
 .confirmation-booking {
@@ -116,14 +123,8 @@ p {
   margin: auto;
   position: relative;
 }
-.info-booking {
-  display: block;
-  float: left;
-}
-.data-booking {
-  display: block;
-  float: right;
-}
+
+/* CSS Booking END*/
 
 /* CSS footer*/
 .footer_info li {
@@ -197,6 +198,16 @@ p {
   #navbar a:hover:not(:first-child) {
     font-size: 24px;
   }
+  .footer_info{
+    display:block;
+    float:left;
+    width: 50%;
+  }
+  .footer_social{
+    display:block;
+    float:right;
+    width: 50%;
+  }
 
 
 }
@@ -204,24 +215,22 @@ p {
 #restContainer{
   top: 100px;
   position: relative;
-  width: 60%;
   margin: auto;
+  text-align: center;
+  padding-bottom: 80px;
 }
 .rest_text{
   margin-bottom: 5%;
 
 }
-#rest_row1{
-  width: 50%;
+.rest_row1, .rest_row2{
   display: inline-block;
-  float: left;
-  text-align: center;
+  margin: auto;
+  position: relative;
 }
-#rest_row2{
-  width: 50%;
-  display: inline-block;
-  float: right;
-  text-align: center;
+
+.testtest {
+  display: block;
 }
 
 .menuPic {
@@ -271,11 +280,11 @@ p {
   border: 2px black solid;
   min-height: 250px;
   margin-top:5%;
-  background-color: #f4b171;
+  background-color: #f5c189;
 }
 
 .foodDish:hover{
-  background-color: #f6c9a2;
+  background-color: #f7cda1;
 }
 
 
@@ -299,7 +308,7 @@ h2.title{
   font-size: 20px;
   margin-top: 0%;
   padding-top: 0%;
-  color:#ff3300;
+  color:#b73d0f;
 }
 
 .bestillButton {
@@ -343,17 +352,18 @@ h2.title{
   padding: 0.6em;
   font-family: "Bubbler One";
   font-size: 12px;
-  margin-left: 20%;
+
+
+}
+input.orderInput{
+display: none;
 
 }
 
-
 .orderInput{
-  display: none;
+
   position: relative;
-  display: inline-block;
   margin-top: 7%;
-  float:right;
   border: 1px solid #999;
   border-radius: 10px;
   padding: 0.6em;
@@ -474,6 +484,7 @@ p.description{
 
 #row1-1{
 
+
 }
 #row1-2{
 
@@ -483,6 +494,7 @@ p.description{
 }
 
 .menuPic {
+  display:none;
   position:relative;
   display: block;
   left:20%;

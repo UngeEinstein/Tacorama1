@@ -13,28 +13,28 @@
   <div class="booking_content">
     <h1> Bordbestilling </h1>
     <div class="booking-form">
-      <form method="post" onsubmit="display()"onchange="show()" >
-        <select class="select"  id="selectform">
+      <form method="post" onchange="show()" id="form">
+        <select class="select" id="selectform">
           <option value="" selected> Velg restaurant </option>
-          <option value="loc1"> Solsiden, Trondheim </option>
-          <option value="loc2"> Tyskebryggen, Bergen </option>
-          <option value="loc3"> Grønland, Oslo </option>
-          <option value="loc4"> Majorstuen, Oslo </option>
+          <option value="Solsiden"> Solsiden, Trondheim </option>
+          <option value="Tyskebryggen"> Tyskebryggen, Bergen </option>
+          <option value="Grønland"> Grønland, Oslo </option>
+          <option value="Majorstuen"> Majorstuen, Oslo </option>
         </select>
 
-        <div class="inputvalg" id="form" style="display:none">
+        <div class="inputvalg" id="form-input" style="display:none">
 
           <label> Fornavn: </label>
           <input type="text" id="Navn" required>
 
           <label> Etternavn: </label>
-          <input type="text" id="Enavn" required><br>
+          <input type="text" id="Enavn"required><br>
 
           <label> E-mail: </label>
-          <input type="email" id="e-post" required>
+          <input type="email" id="e-post"required>
 
           <label> Telefonnummer: </label>
-          <input type="number" id="tlf" min="8" required>
+          <input type="number" id="tlf" min="8"required>
 
           <label> Ønsket dato: </label>
           <input type="date" id="minDate">
@@ -47,37 +47,42 @@
           <label> Kommentarer: </label>
           <textarea rows="4" cols="30" id="kom"></textarea> <br>
           <input type="submit" id="booking-form" value="Bestill">
-    </div>
-    </form>
-    <div class="booking-startinfo">
-      <p> Er det fullt på online-bookingen? Ikke fortvil! Vi holder av omtrent halve restauranten til de av dere som spontant stikker innom. Vi anbefaler likevel å forhåndsbestille bord, slik at dere har bord om restauranten er full. Er dere over 8
-        personer, anbefaler vi å bestille bord minimum tre dager på forhånd. Det er ofte vanskelig å finne ledig plass til så mange - særlig i helgene og mellom kl. 18 og 21 på hverdager. Ta gjerne kontakt med oss på dagtid via e-post eller telefon,
-        så svarer vi fortløpende! </p>
-    </div>
-
-    <div class="booking-restaurant">
-      <div class="first-row-booking">
-        <h2>Solsiden</h2>
-        <p> Åpningstider: 11:00-23:00 Alle dager <br> tlf: 406 89 294 <br> E-post: Solsiden@tacorama.no <br>Solsiden 3b, Trondheim<p>
-            <h2>Grønland</h2>
-            <p> Åpningstider: 11:00-23:00 Alle dager <br> tlf: 405 76 987 <br> E-post: Gronland@tacorama.no <br> Nordbygata 54, Oslo<p>
+        </div>
+      </form>
+      <div class="booking_result">
+        <p id="book_res"></p>
       </div>
-      <div class="second-row-booking">
-        <h2>Tyskebryggen</h2>
-        <p> Åpningstider: 11:00-23:00 Alle dager <br> tlf: 406 79 403 <br> E-post: bryggen@tacorama.no <br> bryggen 15, Bergen <p>
-            <h2>Majorstuen</h2>
-            <p> Åpningstider: 11:00-23:00 Alle dager <br> tlf: 406 93 715 <br> E-post: Majorstuen@tacorama.no <br> Frognergate 15, Oslo <p>
+      <div class="booking-startinfo" id="booking_fjern">
+        <p> Er det fullt på online-bookingen? Ikke fortvil! Vi holder av omtrent halve restauranten til de av dere som spontant stikker innom. Vi anbefaler likevel å forhåndsbestille bord, slik at dere har bord om restauranten er full. Er dere over
+          8
+          personer, anbefaler vi å bestille bord minimum tre dager på forhånd. Det er ofte vanskelig å finne ledig plass til så mange - særlig i helgene og mellom kl. 18 og 21 på hverdager. Ta gjerne kontakt med oss på dagtid via e-post eller
+          telefon,
+          så svarer vi fortløpende! </p>
+      </div>
+
+      <div class="booking-restaurant">
+        <div class="first-row-booking">
+          <h2>Solsiden</h2>
+          <p> Åpningstider: 11:00-23:00 Alle dager <br> tlf: 406 89 294 <br> E-post: Solsiden@tacorama.no <br>Solsiden 3b, Trondheim<p>
+              <h2>Grønland</h2>
+              <p> Åpningstider: 11:00-23:00 Alle dager <br> tlf: 405 76 987 <br> E-post: Gronland@tacorama.no <br> Nordbygata 54, Oslo<p>
+        </div>
+        <div class="second-row-booking">
+          <h2>Tyskebryggen</h2>
+          <p> Åpningstider: 11:00-23:00 Alle dager <br> tlf: 406 79 403 <br> E-post: bryggen@tacorama.no <br> bryggen 15, Bergen <p>
+              <h2>Majorstuen</h2>
+              <p> Åpningstider: 11:00-23:00 Alle dager <br> tlf: 406 93 715 <br> E-post: Majorstuen@tacorama.no <br> Frognergate 15, Oslo <p>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-  <ul id="navbar">
-    <a class="meny" href="./index.html">
-      <img id="logo" src="./IMG/Logo/Logo.png" alt="Logo">
-    </a>
-  </ul>
-  <iframe src="footer.html" width="100%" scrolling="no" style="border:none;"></iframe>
+  <nav id="navbar">
 
+  </nav>
+  <div id="footer_div">
+  </div>
+
+  <script src="script/footer.js"></script>
   <script src="Script/book.js"></script>
   <script src="Script/navigationbar.js"></script>
 </body>
