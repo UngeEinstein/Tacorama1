@@ -216,24 +216,22 @@ p {
 #restContainer{
   top: 100px;
   position: relative;
-  width: 60%;
   margin: auto;
+  text-align: center;
+  padding-bottom: 5%;
 }
 .rest_text{
   margin-bottom: 5%;
 
 }
-#rest_row1{
-  width: 50%;
+.rest_row1, .rest_row2{
   display: inline-block;
-  float:left;
-  text-align: center;
+  margin: auto;
+  position: relative;
 }
-#rest_row2{
-  width: 50%;
-  display: inline-block;
-  float: right;
-  text-align: center;
+
+.testtest {
+  display: block;
 }
 
 .menuPic {
