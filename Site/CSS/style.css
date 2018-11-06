@@ -191,6 +191,16 @@ p {
   #navbar a:hover:not(:first-child) {
     font-size: 24px;
   }
+  .footer_info{
+    display:block;
+    float:left;
+    width: 50%;
+  }
+  .footer_social{
+    display:block;
+    float:right;
+    width: 50%;
+  }
 
 
 }
