@@ -1,4 +1,4 @@
-const footeren=`
+const footeren = `
 <div class="footer">
 
   <div class="footer_info">
@@ -19,8 +19,9 @@ const footeren=`
   </div>
 
 </div>`
-function addfooter(){
-  const targetElement= document.querySelector("#footer_div");
-  targetElement.innerHTML=footeren;
+
+function addfooter() {
+  const targetElement = document.querySelector("#footer_div");
+  targetElement.innerHTML = footeren;
 }
 addfooter()
