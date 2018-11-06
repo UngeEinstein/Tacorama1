@@ -32,3 +32,24 @@ document.getElementById("book_res").innerHTML= "Bestillingen er fullført! Du ha
   + document.getElementById("e-post").value
   + "   vil bli sendt som bekreftelse";
 }
+
+
+
+function display(value) {
+  if (value=='') {
+      return document.getElementById('form').style.display = 'none';
+      for (i=0;i<150;i++){
+        console.log(i);
+      }
+
+    }
+  else {
+      return document.getElementById('form').style.display = 'block';
+    }
+
+
+  }
+
+  if (SubmitCheck==1){
+    console.log("yo");
+  }

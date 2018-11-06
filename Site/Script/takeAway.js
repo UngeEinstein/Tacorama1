@@ -1,4 +1,34 @@
-let cart = [];
+let cart1 = [
+  {name:"Taco Escobar", price:100,count:0},
+
+];
+
+let cart = {
+    "Mexican Fiesta":{
+    price:120,
+    count:0,
+  },
+  "Fredagstaco":{
+    price:99,
+    count:0,
+  },
+  "Taco Escobar":{
+    price:130,
+    count:0,
+  },
+  "Super Nachos":{
+    price:110,
+    count:0,
+  },
+  "The Wall":{
+    price:150,
+    count:0,
+  },
+  "Filippos Fajitas":{
+    price:149,
+    count:0,
+  },
+}
 
 // Defining shopping cart items
 let Item = function(name,price,count) {
@@ -8,23 +38,23 @@ let Item = function(name,price,count) {
 };
 
 //adds item to Cart and
-function addItemToCart(name, price,count){
+function addItemToCart(name, count){
 
-  for (i in cart) {
-      if (cart[i].name === name) {
-        cart[i].count=count;
-        console.log(count);
+  for (foodDish in cart) {
+      if (foodDish === name) {
+        cart[foodDish].count=count;
+        console.log(cart[foodDish].count);
         displayCart(name);
         return;
         }
       }
 
       const item = new Item(name,price,count);
-      cart.push(item);
+      console.log(name);
+
       displayCart(name);
-
+      console.log("hfjdsfjkdsfdskj");
       console.log(cart);
-
 
 }
 
@@ -55,14 +85,15 @@ function displayCart(menuItem) {
 
 
 
-  for(i in cartArray){
-    let orderName= cartArray[i].name;
-    let orderCount= cartArray[i].count;
-    let orderPrice= cartArray[i].price;
-    let getLiId=document.getElementById(cartArray[i].name);
+  for(foodDish in cartArray){
+    let orderName= foodDish;
+    let orderCount= cartArray[foodDish].count;
+    let orderPrice= cartArray[foodDish].price;
+    let getLiId=document.getElementById(foodDish);
 
 
-    if (orderName==menuItem && getLiId==null && orderCount>0){
+
+    if (orderCount==1 && getLiId==null){
 
       let tekst=document.createTextNode(orderName);
       let textOrder=document.createTextNode(orderName);
@@ -80,11 +111,6 @@ function displayCart(menuItem) {
 
       getList.removeChild(getLiId);
 
-      console.log(cartArray[i]);
-      cartArray.splice(i,1);
-      console.log("yomdasjdas");
-      console.log(cartArray[i]);
-
    }
 
 
@@ -94,14 +120,14 @@ function displayCart(menuItem) {
 
     }
 
-    if(orderCount>0){
+
     totalPrice+= orderPrice*orderCount;
     document.getElementById("totalSum").innerHTML="Totalsum: " + totalPrice +",-kr";
     console.log(totalPrice);
 
   };
 }
-}
+
 
 
 function confirmOrder(){
@@ -132,13 +158,23 @@ function confirmOrder(){
 
 }
 
-function revealNumber(){
-  document.getElementById("reveal").addEventListener("click", displayDate)
+function revealNumber(parent, name){
+  parent.childNodes[3].style.display="inline-block";
   let selectInput= document.querySelector('input');
-  selectInput.style.display="inline-block";
-  selectInput.value++;
+  selectInput.value++
+  console.log(parent.childNodes)
+ parent.childNodes[3].value++;
+  addItemToCart(name, parent.childNodes[3].value);
+
+
 
 }
+
+// validate orderForm
+document.getElementById("orderForm").addEventListener("submit",function(event){
+  event.preventDefault();
+  confirmOrder();
+});
 
 
 //
