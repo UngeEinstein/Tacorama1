@@ -200,6 +200,16 @@ p {
   #navbar a:hover:not(:first-child) {
     font-size: 24px;
   }
+  .footer_info{
+    display:block;
+    float:left;
+    width: 50%;
+  }
+  .footer_social{
+    display:block;
+    float:right;
+    width: 50%;
+  }
 
 
 }
@@ -207,24 +217,22 @@ p {
 #restContainer{
   top: 100px;
   position: relative;
-  width: 60%;
   margin: auto;
+  text-align: center;
+  padding-bottom: 80px;
 }
 .rest_text{
   margin-bottom: 5%;
 
 }
-#rest_row1{
-  width: 50%;
+.rest_row1, .rest_row2{
   display: inline-block;
-  float: left;
-  text-align: center;
+  margin: auto;
+  position: relative;
 }
-#rest_row2{
-  width: 50%;
-  display: inline-block;
-  float: right;
-  text-align: center;
+
+.testtest {
+  display: block;
 }
 
 .menuPic {
