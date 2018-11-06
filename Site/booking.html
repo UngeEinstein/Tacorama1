@@ -13,16 +13,16 @@
   <div class="booking_content">
     <h1> Bordbestilling </h1>
     <div class="booking-form">
-      <form method="post" onsubmit="display()"onchange="show()" >
+      <form method="post" onchange="show()" id="form">
         <select class="select"  id="selectform">
           <option value="" selected> Velg restaurant </option>
-          <option value="loc1"> Solsiden, Trondheim </option>
-          <option value="loc2"> Tyskebryggen, Bergen </option>
-          <option value="loc3"> Grønland, Oslo </option>
-          <option value="loc4"> Majorstuen, Oslo </option>
+          <option value="Solsiden"> Solsiden, Trondheim </option>
+          <option value="Tyskebryggen"> Tyskebryggen, Bergen </option>
+          <option value="Grønland"> Grønland, Oslo </option>
+          <option value="Majorstuen"> Majorstuen, Oslo </option>
         </select>
 
-        <div class="inputvalg" id="form" style="display:none">
+        <div class="inputvalg" id="form-input" style="display:none">
 
           <label> Fornavn: </label>
           <input type="text" id="Navn" required>
@@ -49,7 +49,10 @@
           <input type="submit" id="booking-form" value="Bestill">
     </div>
     </form>
-    <div class="booking-startinfo">
+    <div class="booking_result">
+      <p id="book_res"></p>
+    </div>
+    <div class="booking-startinfo" id="booking_fjern">
       <p> Er det fullt på online-bookingen? Ikke fortvil! Vi holder av omtrent halve restauranten til de av dere som spontant stikker innom. Vi anbefaler likevel å forhåndsbestille bord, slik at dere har bord om restauranten er full. Er dere over 8
         personer, anbefaler vi å bestille bord minimum tre dager på forhånd. Det er ofte vanskelig å finne ledig plass til så mange - særlig i helgene og mellom kl. 18 og 21 på hverdager. Ta gjerne kontakt med oss på dagtid via e-post eller telefon,
         så svarer vi fortløpende! </p>

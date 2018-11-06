@@ -83,6 +83,13 @@ p {
   text-align: center;
   margin: auto;
 }
+.booking_result  {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  font-size: 1.7em;
+  width: 60%;
+}
 .booking-form label {
     display: block;
     font-size: 20px;
@@ -102,7 +109,6 @@ p {
 .first-row-booking, .second-row-booking {
   display: inline-block;
   padding: 80px;
-  position: relative;
 }
 
 .confirmation-booking {
@@ -110,14 +116,7 @@ p {
   margin: auto;
   position: relative;
 }
-.info-booking {
-  display: block;
-  float: left;
-}
-.data-booking {
-  display: block;
-  float: right;
-}
+
 
 /* CSS footer*/
 .footer_info li {
