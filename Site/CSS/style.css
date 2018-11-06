@@ -330,7 +330,6 @@ h2.title{
   font-size: 20px;
   margin-left: 5px;
   margin-right: 5px;
-  width:100%;
 
 }
   .chilli{
@@ -357,7 +356,7 @@ h1#bestillingsOverskrift {
   background-color: #ca422d;
   border: #ca422d;
   margin-left: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 0.6em;
   font-family: "Bubbler One";
   font-size: 12px;
@@ -367,12 +366,11 @@ h1#bestillingsOverskrift {
 
 .minButton{
   display:none;
+  min-width: 25px;
   background-color: #ca422d;
   border:#ca422d;
   border-radius: 5px;
   padding: 0.6em;
-  font-family: "Bubbler One";
-  font-size: 10px;
   font-weight: bold;
 
 }
@@ -380,13 +378,12 @@ input.orderInput{
 display: none;
 border:#f5c189;
 background-color: #fae6d1;
+border-radius: 5px;
 
 }
 
 .orderInput{
   position: relative;
-  border: 1px solid #999;
-
   padding: 0.6em;
 
 
