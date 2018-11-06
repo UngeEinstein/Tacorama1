@@ -77,16 +77,15 @@ p {
 
 
 /* CSS booking.html*/
-.booking_content{
+.booking_content{ // CSS til hele booking-siden
   position: relative;
-  top: 100px;
+  top: 100px; // for at navbar ikke skal dekke over div
   text-align: center;
   margin: auto;
-
+// satt ikke width til 60% for å kunne ha info om restauranter to og to
 }
 .booking-startinfo {
   width: 60%;
-  text-align: center;
   margin: auto;
 }
 .booking_result  {
@@ -100,24 +99,22 @@ p {
     display: block;
     font-size: 20px;
 }
-.booking-form input, select, textarea {
+.booking-form input, select, textarea { // css til form
   border: 1px solid #999;
   border-radius: 10px;
   padding: 0.6em;
   font-family: "Bubbler One";
   font-size: 20px;
 }
-.booking-form {
+.booking-form { // sentrerer hele form
   text-align: center;
-  margin: auto;
-  position: relative;
 }
-.first-row-booking, .second-row-booking {
+.first-row-booking, .second-row-booking { // css til de fire informasjonskapslene til restauranter i booking
   display: inline-block;
   padding-left: 5%;
 
 }
-.booking-restaurant {
+.booking-restaurant { // forhindrer kollidering med footer
   padding-bottom: 80px;
 }
 
@@ -127,6 +124,7 @@ p {
   position: relative;
 }
 
+/* CSS Booking END*/
 
 /* CSS footer*/
 .footer_info li {
