@@ -114,7 +114,11 @@ p {
 }
 .first-row-booking, .second-row-booking {
   display: inline-block;
-  padding: 80px;
+  padding-left: 5%;
+
+}
+.booking-restaurant {
+  padding-bottom: 80px;
 }
 
 .confirmation-booking {
