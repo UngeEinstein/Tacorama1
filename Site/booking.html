@@ -15,7 +15,7 @@
     <div class="booking-form">
       <form method="get" onsubmit="display()"onchange="display(this.value)" id="booking-form">
         <select class="select"  id="selectform">
-          <option value="" selected> Velg restaurant </option>
+          <option value=" loc1" selected> Velg restaurant </option>
           <option value="loc1"> Solsiden, Trondheim </option>
           <option value="loc2"> Tyskebryggen, Bergen </option>
           <option value="loc3"> Grønland, Oslo </option>
@@ -25,22 +25,22 @@
         <div class="inputvalg" id="form" style="display:none">
 
           <label> Fornavn: </label>
-          <input type="text" id="Navn" required>
+          <input type="text" id="Navn" value="a" required>
 
           <label> Etternavn: </label>
-          <input type="text" id="Enavn" required><br>
+          <input type="text" id="Enavn" value="a" required><br>
 
           <label> E-mail: </label>
-          <input type="email" id="e-post" required>
+          <input type="email" id="e-post" value="a@gm" required>
 
           <label> Telefonnummer: </label>
-          <input type="number" id="tlf" min="8" required>
+          <input type="number" id="tlf" min="8" value="12345678" required>
 
           <label> Ønsket dato: </label>
-          <input type="date" id="minDate">
+          <input type="date" id="minDate" value="2018-11-08">
 
           <label> Hvilket tidspunkt passer best?</label>
-          <input type="time" name="time" min="11:00" max="23:00" id="tid" required>
+          <input type="time" name="time" min="11:00" max="23:00" id="tid" value="22:00" required>
           <!-- fungerer når chrome er på norsk !-->
 
 
