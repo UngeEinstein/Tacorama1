@@ -39,10 +39,8 @@ p {
 .index_start_img_content {
   position: relative;
   margin-top: -30%;
-  /*top: 55%;*/
   left: 25%;
   width: 50%;
-  /*transform: translate(-50%, -50%);*/
   border: 0.2rem solid #b73d0f;
   background: rgba(252, 229, 205, 0.6);
   text-align: center;
@@ -91,6 +89,13 @@ p {
   text-align: center;
   margin: auto;
 }
+.booking_result  {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  font-size: 1.7em;
+  width: 60%;
+}
 .booking-form label {
     display: block;
     font-size: 20px;
@@ -110,7 +115,6 @@ p {
 .first-row-booking, .second-row-booking {
   display: inline-block;
   padding: 80px;
-  position: relative;
 }
 
 .confirmation-booking {
@@ -118,14 +122,7 @@ p {
   margin: auto;
   position: relative;
 }
-.info-booking {
-  display: block;
-  float: left;
-}
-.data-booking {
-  display: block;
-  float: right;
-}
+
 
 /* CSS footer*/
 .footer_info li {
