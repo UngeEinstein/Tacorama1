@@ -131,35 +131,52 @@ function displayCart(menuItem) {
 
 
 function confirmOrder(){
+  checkItems = document.getElementById("orderList").childElementCount;
+  if (checkItems>0){
   const customerName=document.getElementById("name").value;
   const customerNumber=document.getElementById("phoneNumber").value;
   const pickUpLocation=document.getElementById("pickUp").value;
   const pickUpHours=document.getElementById("pickUpTime").value;
   const getInputs = document.querySelectorAll(".orderInput");
+  const getRevealButtons = document.querySelectorAll(".reveal");
+  const getMinButtons = document.querySelectorAll(".minButton");
   const makeP = document.createElement('P')
   const personalInfo = document.getElementById('personalInfo');
 
   document.getElementById('orderForm').style.display="none";
+
+
   personalInfo.appendChild(makeP);
   makeP.setAttribute("id","confirmationText");
-  makeP.innerHTML="Din Bestilling er bekreftet!"+ "<br></br>"+ "Din mat hentes på: "+ pickUpLocation+"<br>" + "klokken: " + pickUpHours;
+  makeP.innerHTML="Din Bestilling er bekreftet!"+ "<br></br>"+ "Bestillingen er registrert på: " + "<br>" + customerName + "<br>" +
+  "En bekreftelse er sendt til: "+ customerNumber + "<br>" +"Din mat hentes på: "+ pickUpLocation+" <br>" + "klokken: " + pickUpHours;
 
   //document.getElementById("orderText").innerHTML="Din Bestilling er bekreftet!"+ "<br></br>"+ "Din mat hentes på: "+ pickUpLocation+"<br>" + "klokken: " + pickUpHours;
 
 
 //  document.getElementById("personalInfo").innerHTML=
 
-  console.log(getInputs.length);
-  for (var i = 0; i < getInputs.length; i++) {
+
+  for (var i = 0; i < getRevealButtons.length; i++) {
     console.log(i);
+    getRevealButtons[i].style.display="none";
     getInputs[i].style.display="none";
+    getMinButtons[i].style.display="none";
   }
   document.getElementById("orderbtns").style.display="none";
 
 }
+else{
+  alert("Vennligst velg en rett du vil bestille");
+}
+
+}
 
 function revealNumber(parent, name){
+
   parent.childNodes[3].style.display="inline-block";
+  parent.childNodes[5].style.display="inline-block";
+
 
 
   console.log(parent.childNodes)
@@ -169,6 +186,14 @@ function revealNumber(parent, name){
 
 
 }
+
+function countDown (parent, name) {
+  if(parent.childNodes[3].value>0)
+ parent.childNodes[3].value--;
+  addItemToCart(name, parent.childNodes[3].value);
+}
+
+
 
 // validate orderForm
 document.getElementById("orderForm").addEventListener("submit",function(event){

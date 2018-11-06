@@ -278,7 +278,7 @@ p {
 
 .foodDish {
   border: 2px black solid;
-  min-height: 250px;
+  min-height: 300px;
   margin-top:5%;
   background-color: #f5c189;
 }
@@ -294,19 +294,25 @@ p {
 .title{
   display: inline-block;
   font-family: "Bubbler One";
-  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 1px;
 
 }
 h2.title{
   display: inline-block;
 }
 
+
 .price{
   position: relative;
-  display: block;
+  display: inline-block;
+  float:right;
+
   text-align: left;
   font-size: 20px;
-  margin-top: 0%;
+  margin-top: 5px;
+  margin-right: 5px;
   padding-top: 0%;
   color:#b73d0f;
 }
@@ -322,24 +328,26 @@ h2.title{
   position:relative;
   text-align: left;
   font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
   width:100%;
 
+}
+  .chilli{
+    position: relative;
+    display: inline-block;
+    float:right;
+    height:7%;
+    width:8%;
+  }
+
+h1#bestillingsOverskrift {
+    position:  relative;
+    right: 10%;
 
 }
-#bestillingsOverskrift{
-  position:relative;
-  left: -10%;
-}
 
 
-
-.chilli{
-  float:right;
-  position: relative;
-  display: inline-block;
-  height:7%;
-  width:7%;
-}
 
 
 
@@ -347,7 +355,8 @@ h2.title{
 
   display: inline-block;
   background-color: #ca422d;
-  border: 1px solid #999;
+  border: #ca422d;
+  margin-left: 5px;
   border-radius: 10px;
   padding: 0.6em;
   font-family: "Bubbler One";
@@ -355,17 +364,29 @@ h2.title{
 
 
 }
+
+.minButton{
+  display:none;
+  background-color: #ca422d;
+  border:#ca422d;
+  border-radius: 5px;
+  padding: 0.6em;
+  font-family: "Bubbler One";
+  font-size: 10px;
+  font-weight: bold;
+
+}
 input.orderInput{
 display: none;
+border:#f5c189;
+background-color: #fae6d1;
 
 }
 
 .orderInput{
-
   position: relative;
-  margin-top: 7%;
   border: 1px solid #999;
-  border-radius: 10px;
+
   padding: 0.6em;
 
 
@@ -404,9 +425,10 @@ menuContainer{
 }
 
 #cartInfoContainer{
+
   display:inline-block;
   width:35%;
-  border:1px #ccc solid;
+
   background-color: #fff280;
   min-height: 269px;
   float:left;
@@ -417,6 +439,8 @@ menuContainer{
 #cartInfo{
   display: inline-block;
   margin-top: 2%;
+  margin-right: 5px;
+  min-height: 50%;
 
 
 
@@ -424,7 +448,19 @@ menuContainer{
 
 #totalSum{
   text-align: right;
+  margin-bottom: 0px;
 
+}
+
+#paymentInformation{
+  font-size: 10px;
+  margin-top: 0px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 #personalInfoContainer {
@@ -432,9 +468,8 @@ menuContainer{
   min-height: 269px;
   display:inline-block;
   width:35%;
-  border:1px #ccc solid;
   background-color: #ffb594;
-  margin-left: 0.5%;
+
   text-align: left;
 
 
@@ -442,16 +477,16 @@ menuContainer{
 
 #personalInfo{
   display: inline-block;
-  margin-top: 2%;
-  margin-left: 1%;
+  margin-top: 5px;
+  margin-left: 5px;;
   min-height: 50%;
 }
 
 
 p.description{
-  font-size: 10px;
+  font-size: 15px;
   letter-spacing: 0px;
-  line-height: 15px;
+  line-height: 18px;
 }
 
 
@@ -467,10 +502,9 @@ p.description{
   width:15%;
   text-align: center;
   vertical-align: center;
-  margin-top:0%;
+  margin-top:1%;
   margin-bottom:0%;
   background-color: #ca422d;
-  border: 1px solid #999;
   border-radius: 10px;
   padding: 0.6em;
   font-family: "Bubbler One";
