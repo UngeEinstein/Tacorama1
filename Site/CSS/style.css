@@ -196,11 +196,12 @@ p {
 }
 /*våre restauranter*/
 #restContainer{
+  padding-top: 7%;
   top: 100px;
   width:60%;
   left:20%;
   right:20%;
-  margin: auto; 
+  margin: auto;
 }
 .rest_text{
   margin-top: 0;
@@ -219,6 +220,10 @@ p {
   text-align: center;
   margin-bottom: 5%;
 
+}
+
+#restContainer > img {
+  padding-top: 100px;
 }
 /* Arnstein */
 
