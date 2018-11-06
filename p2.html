@@ -26,9 +26,8 @@
 
     <div class="changes">
       <h2>Forandringer vi har gjort</h2>
-      <p>Vi har til sammen fem html-sider og .. JavaScript. Vi hadde noen forandringer på hele siden fra det vi planla.
-
-      </p>
+      <p>Vi har til sammen fem html-sider og tre JavaScript. Det ble en del forandringer på nettsiden enn det vi hadde planlagt, men ikke mye.
+        Vi fant ut etterhvert hva som gjorde siden pen å se på samt enkel å bruke, og derfor ble noen ting lagt til og andre fjernet.  </p>
       <h4>Forandringer på index.html</h4>
       <p>Den største forandringen gjort på denne siden er at vi ikke inkluderte slideshowet likevel. Egentlig skulle forsidebildet endre seg etter en viss tid,
       men vi fant ganske fort ut at dette ble veldig rotete og ikke særlig brukervennlig. Derfor droppet vi det. Ellers er siden ganske lik som vi hadde planlagt.</p>
@@ -36,17 +35,19 @@
       <p>På booking-siden ble det ikke gjort store forandringer. I stedet for å bli sendt til en ny side når man booker bord, kommer bare skjemaet opp på
       samme side når restauranten er valgt. Når brukeren trykker submit-knappen kommer bestillingsbekreftelsen opp på siden.</p>
       <h4>Forandringer på meny.html</h4>
+      <p></p>
       <h4>Forandringer på vare_restauranter.html</h4>
       <p>Vi forandret ikke noe på denne siden bortsett fra at vi droppet å linke adressene opp mot Google Maps. Det var fordi det ikke var nødvendig i oppgaven (og heller ikke "lov").</p>
       <h4>Forandringer på CSS</h4>
       <p>Blant annet ble body-width satt til 60% og ikke 80% da vi ville ha mer luft på siden. Vi importerte skrifttypen "Bubbler One" som gjelder for hele siden,
-        og ikke to forskjellige skrifttyper til overskrift og brødtekst. Det ble ryddigere med en type font. Vi brukte en litt større font-size en planlagt også.
-        Ellers er footeren og navigasjonsbaren som vi planla, bortsett fra at når man hoover over navbaren blir teksten større (og ikke noen underline).</p>
+        og ikke to forskjellige skrifttyper til overskrift og brødtekst. Det ble ryddigere med en type font. Vi brukte en litt større font-size en planlagt også.</p>
       <h4>Forandringer på book.js</h4>
+      <p>Denne JavaScripten gjør at man kan booke bord online, og få opp en bestilllingsbekreftelse når skjemaet er fyllt ut. Alle input (utenom kommentar) må være med, hvis ikke får ikke brukeren til å bestille bord.</p>
       <h4>Forandringer på navigationbar.js</h4>
-      <h4>Foranringer på takeAway.js</h4>
-      <h4></h4>
-
+      <p>Vi hadde ikke tenkt å lage navbaren i JavaScript i utganspunktet, men som en html-fil. Vi endret på hvordan teksten skal se ut når vi hoover over den.
+      I stedet for å få en underline, ble teksten 2px større slik at brukeren tydelig ser hvilken link man trykker på.</p>
+      <h4>Forandringer på takeAway.js</h4>
+      <p>Denne JavaScripten gjør det mulig at brukeren kan bestille mat (take away) via nett. Det vil dukke opp hva brukeren har lagt i handlekurven, sluttsummen og hvor og når maten kan hentes. </p>
     </div>
 
     <!--<div class="navigation">
@@ -57,7 +58,7 @@
       for å gjøre nettsiden brukervennlig, vil vi ha en meny som inneholder knapp til disse sidene og derfor mulig å navigere seg frem til riktig side med kun ett tastetrykk.
       menybaren vil også være en egen html-fil som blir linket opp til hvert enkelt side for å slippe å skrive koden to ganger, og for at alle sidene skal være koblet sammen.
       </p>
-    </div>-->
+    </div>
 
     <div class="page">
       <h2>Sidens layout og utseende</h2>
@@ -199,50 +200,68 @@
             Dette vil være Hjalti sitt ansvar</li>
       </ol>
 >>>>>>> 4e9f2eeed9bd2061012ad5a609f58aea3370347b
-    </div>
+</div>-->
 
     <div class="plan">
-      <h2>Organisering av filene</h2>
-      <p>Vi vil følge denne inndelingen av filer og mapper slik at vi har et system over alle filene, bildene osv. </p>
+      <h2>Oppdatering av organisering av filene</h2>
       <p>Liste over filer og mapper:</p>
       <ul>
         <li>index.html</li>
         <li>meny.html</li>
         <li>booking.html</li>
-        <li>bestilling.html</li>
-        <li>navbar.html</li>
+        <li>vare_restauranter.html</li>
+        <li>footer.html</li>
         <li>img/
             <ul>
-            <li>logo.png</li>
-            <li>startside1.png</li>
-            <li>startside2.png</li>
-            <li>startside3.png</li>
-            <li>meny1.png</li>
-            <li>meny2.png</li>
-            <li>...</li>
-            <li>meny8.png</li>
-            <li>restaurant1.png</li>
-            <li>restaurant2.png</li>
-            <li>restaurant3.png</li>
-            <li>restaurant4.png</li>
+            <li>index/
+              <ul>
+                <li>fajitas.png</li>
+                <li>nachos.png</li>
+                <li>nachos1.png</li>
+                <li>startbilde_taco.png</li>
+                <li>three_tacos.png</li>
+              </ul></li>
+            <li>Logo/
+              <ul>
+                <li>Logo.png</li>
+              </ul></li>
+            <li>meny/
+              <ul>
+                <li>SETT INN BILDER</li>
+              </ul></li>
+            <li>social_media/
+              <ul>
+                <li>facebook_logo.png</li>
+                <li>instagram_logo.png</li>
+                <li>twitter_logo.ong</li>
+              </ul></li>
+            <li>vare_restauranter/
+              <ul>
+                <li>taco1.jpg</li>
+                <li>...</li>
+                <li>taco4.jpg</li>
+              </ul></li>
           </ul></li>
         <li>scripts/
           <ul>
             <li>booking.js</li>
-            <li>takeaway.js</li>
-            <li>slideshow.js</li>
-            <li>valid.js</li>
-          </ul><li>
-        <li>style.css</li>
+            <li>takeAway.js</li>
+            <li>navigationbar.js</li>
+          </ul></li>
+        <li>CSS/
+          <ul>
+            <li>style.css</li>
+          </ul>
+        </li>
       </ul>
-      <h2>Arbeidsfordeling og frister</h2>
+
+      <h2>Endelig arbeidsfordeling og frister</h2>
       <table>
         <thead>
           <tr>
             <th>Fil</th>
             <th>Beskrivelse</th>
             <th>Ansvarlig</th>
-            <th>Siste frist</th>
           </tr>
         </thead>
         <tbody>
@@ -250,67 +269,51 @@
             <td>index.html</td>
             <td>Hovedsiden.</td>
             <td>Emilie</td>
-            <td>05.11.18</td>
           </tr>
           <tr>
             <td>booking.html</td>
             <td>Booking-siden der kunden kan booke bord hos Tacorama.</td>
             <td>Sepehr</td>
-            <td>05.11.18</td>
           </tr>
           <tr>
             <td>meny.html</td>
-            <td>Fortelle om menyen. Informasjon om pris, allergener osv.</td>
-            <td>Hjalti</td>
-            <td>05.11.18</td>
-          </tr>
-          <tr>
-            <td>bestilling.html</td>
-            <td>Kunden skal kunne legge til varer i handlekurven og bestille disse. Skal ikke inneholde database.</td>
+            <td>Fortelle om menyen. Informasjon om pris, allergener osv. Kunden skal kunne legge til varer i handlekurven og bestille disse.</td>
             <td>Arnstein</td>
-            <td>05.11.18</td>
           </tr>
           <tr>
             <td>vare_restauranter.html</td>
-            <td>Kontaktinformasjon til hver restaurant. Adressene kan linke til google maps.</td>
+            <td>Kontaktinformasjon til hver restaurant. Åpningstider, adresse, telefonnummer og e-mail.</td>
             <td>Hjalti</td>
-            <td>05.11.18</td>
+          </tr>
+          <tr>
+            <td>footer.html</td>
+            <td>Kontaktinformasjon nederst på siden til vår hovedrestaurant. Inneholder adresse, e-mail, telefonnummer og sosiale medier.</td>
+            <td>Emilie og Hjalti</td>
           </tr>
           <tr>
             <td>style.css</td>
             <td>CSS filen som inneholder all styling av nettsiden.</td>
             <td>Alle</td>
-            <td>05.11.18</td>
           </tr>
           <tr>
-            <td>booking.js</td>
+            <td>book.js</td>
             <td>Pop-up som bekreftelse på reservasjon og gjengivelse av brukeres informasjon.</td>
             <td>Sepehr</td>
-            <td>05.11.18</td>
           </tr>
           <tr>
-            <td>takeaway.js</td>
+            <td>takeAway.js</td>
             <td>Summere varene i handlekurven.</td>
             <td>Arnstein</td>
-            <td>05.11.18</td>
           </tr>
           <tr>
-            <td>slideshow.js</td>
-            <td>Etter en viss tid skal hovedbildet på startsiden byttes.</td>
-            <td>Emilie</td>
-            <td>05.11.18</td>
-          </tr>
-          <tr>
-            <td>valid.js</td>
-            <td>Validering av input. For eksempel telefonnummer (at det er åtte sifre).</td>
-            <td>Hjalti</td>
-            <td>05.11.18</td>
+            <td>navigationbar.js</td>
+            <td>Lager navbaren i javascript.</td>
+            <td>Hjalti (Emilie styling)</td>
           </tr>
           <tr>
             <td>Kontroll</td>
             <td>Sjekking av alle filene for feil.</td>
             <td>Alle</td>
-            <td>07.11.18</td>
           </tr>
         </tbody>
       </table>
