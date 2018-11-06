@@ -24,32 +24,11 @@ function display() {
 
 document.getElementById("book_res").innerHTML= "Bestillingen er fullført! Du har booket bord hos: "
   + "<br>"
-  + document.getElementById("selectform").value
-  + document.getElementById("minDate").value
+  + document.getElementById("selectform").value + "&nbsp;"
+  + document.getElementById("minDate").value + "&nbsp;"
   + document.getElementById("tid").value
   + "<br>"
   + "En e-post til:   "
   + document.getElementById("e-post").value
   + "   vil bli sendt som bekreftelse";
 }
-
-
-
-function display(value) {
-  if (value=='') {
-      return document.getElementById('form').style.display = 'none';
-      for (i=0;i<150;i++){
-        console.log(i);
-      }
-
-    }
-  else {
-      return document.getElementById('form').style.display = 'block';
-    }
-
-
-  }
-
-  if (SubmitCheck==1){
-    console.log("yo");
-  }
