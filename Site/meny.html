@@ -96,9 +96,10 @@
 
         <div class="foodDish">
             <h2 class="title">Filippos Fajitas</h2>
-
-
+            <div>
+              <button type onclick="revealNumber(this.parentElement,'The Wall')" class="reveal" id="reveal">Bestill+</button>
               <input class="orderInput" oninput="addItemToCart('Fillipos Fajitas', 120,this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+            </div>
               <h1 class="price">149,-</h2>
                 <img class="menuPic" src="img/meny/fajitas.png"></img>
                 <p class="description">Filippos favoritt-fajitas servert med kylling, ris, stekte grønnsaker, salsa og guacamole.</p>
