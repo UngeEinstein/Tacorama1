@@ -230,21 +230,16 @@ p {
 
 /* Arnstein */
 
-#menuh1 {
-  margin-top: 8%;
-}
+
 
 #menuContainer{
-  top:5%;
+  top:100px;
   position: relative;
   display:inline-block;
   width:60%;
   left:20%;
   right:20%;
   margin-bottom: 3%;
-
-
-
 }
 
 #menuRow1{
@@ -252,9 +247,6 @@ p {
   width:30%;
   min-height: 200px;
   float: left;
-
-
-
 }
 
 #menuRow2{
@@ -327,6 +319,7 @@ h2.title{
 }
 #bestillingsOverskrift{
   position:relative;
+  left: -10%;
 }
 
 
@@ -397,8 +390,7 @@ menuContainer{
   left:30%;
   width:80%;
   left:19.5%;
-
-
+  margin-top: 4%;
 }
 
 #cartInfoContainer{
