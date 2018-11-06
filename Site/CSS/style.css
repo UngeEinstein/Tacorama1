@@ -39,10 +39,8 @@ p {
 .index_start_img_content {
   position: relative;
   margin-top: -30%;
-  /*top: 55%;*/
   left: 25%;
   width: 50%;
-  /*transform: translate(-50%, -50%);*/
   border: 0.2rem solid #b73d0f;
   background: rgba(252, 229, 205, 0.6);
   text-align: center;
