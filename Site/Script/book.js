@@ -24,8 +24,8 @@ function display() {
 
 document.getElementById("book_res").innerHTML= "Bestillingen er fullført! Du har booket bord hos: "
   + "<br>"
-  + document.getElementById("selectform").value
-  + document.getElementById("minDate").value
+  + document.getElementById("selectform").value + "&nbsp;"
+  + document.getElementById("minDate").value + "&nbsp;"
   + document.getElementById("tid").value
   + "<br>"
   + "En e-post til:   "
