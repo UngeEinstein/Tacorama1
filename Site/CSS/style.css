@@ -223,13 +223,8 @@ p {
 }
 .rest_row1, .rest_row2{
   display: inline-block;
-<<<<<<< HEAD
   margin: auto;
   position: relative;
-=======
-  float: left;
-  text-align: center;
->>>>>>> b439ba2d7e01d7acae19208abc3d056cdb94aa3b
 }
 
 .testtest {
