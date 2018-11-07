@@ -224,6 +224,7 @@ p {
 
 }
 .rest_row1, .rest_row2{
+  width:40%;
   display: inline-block;
   margin: auto;
   position: relative;
@@ -235,6 +236,11 @@ p {
 
 .menuPic {
   padding: 3% 0 0 0;
+}
+.testtest{
+position: relative;
+left: 10%;
+width: 80%;
 }
 
 /* Arnstein */
