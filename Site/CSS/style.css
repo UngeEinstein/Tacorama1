@@ -243,9 +243,15 @@ p {
   display: inline-block;
   margin: auto;
   position: relative;
-}
 
-.testtest {
+}
+@media only screen and (min-width: 1334px) {
+  .rest_row2 {
+    margin-left: -150px;
+  }
+  }
+
+.varerest {
   position: relative;
   left: 10%;
   width: 80%;
