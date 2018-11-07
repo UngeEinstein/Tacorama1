@@ -238,7 +238,8 @@ p {
 .rest_text {
   margin-bottom: 5%;
 }
-.rest_row1, .rest_row2{
+
+.rest_row1, .rest_row2 {
   display: inline-block;
   margin: auto;
   position: relative;
@@ -279,16 +280,7 @@ p {
   background-color: #f7cda1;
 }
 
-<<<<<<< HEAD
-
-
-
-
-.title{
-=======
 .title {
-  font-family: "Bubbler One";
->>>>>>> 187db1186be149a6f2bb503f0ef76863acecd79e
   margin-top: 5px;
   margin-bottom: 1px;
 }
