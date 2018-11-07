@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>P3 Design Changes</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>P3 Design Changes</h1>
+      <h2>Arnstein, Emilie, Hjalti og Sepehr</h2>
+      <p>11. November 2018</p>
+    </header>
+
+    <hr>
+
+    <div class="client">
+      <h2>Administrative detaljer:</h2>
+      <ul>
+        <li>Tacorama</li>
+        <li>Link til nettsiden vår: <a href="https://google.com" target="_blank"> Tacorama </a></li>
+      </ul>
+    </div>
+
+    <div class="changes">
+      <h2>Forandringer vi har gjort</h2>
+      <p>Vi har til sammen fem html-sider og tre JavaScript. Det ble en del forandringer på nettsiden enn det vi hadde planlagt, men ikke mye.
+        Vi fant ut etterhvert hva som gjorde siden pen å se på samt enkel å bruke, og derfor ble noen ting lagt til og andre fjernet.  </p>
+      <h4>Forandringer på index.html</h4>
+      <p>Den største forandringen gjort på denne siden er at vi ikke inkluderte slideshowet likevel. Egentlig skulle forsidebildet endre seg etter en viss tid,
+      men vi fant ganske fort ut at dette ble veldig rotete og ikke særlig brukervennlig. Derfor droppet vi det. Ellers er siden ganske lik som vi hadde planlagt.</p>
+      <h4>Forandringer på booking.html</h4>
+      <p>På booking-siden ble det ikke gjort store forandringer. I stedet for å bli sendt til en ny side når man booker bord, kommer bare skjemaet opp på
+      samme side når restauranten er valgt. Når brukeren trykker submit-knappen kommer bestillingsbekreftelsen opp på siden.</p>
+      <h4>Forandringer på meny.html</h4>
+      <p>Menysiden ser omtrent slik ut vi planla. Vi tok med noen bilder i tillegg fordi vi mente det gjorde siden penere + at brukeren får til å se hva den forventer når takeaway bestilles.</p>
+      <h4>Forandringer på vare_restauranter.html</h4>
+      <p>Vi forandret ikke noe på denne siden bortsett fra at vi droppet å linke adressene opp mot Google Maps. Det var fordi vi ikke følte det var nødvendig..</p>
+      <h4>Forandringer på CSS</h4>
+      <p>Blant annet ble body-width satt til 60% og ikke 80% da vi ville ha mer luft på siden. Vi importerte skrifttypen "Bubbler One" som gjelder for hele siden,
+        og ikke to forskjellige skrifttyper til overskrift og brødtekst. Det ble ryddigere med en type font. Vi brukte en litt større font-size en planlagt også.</p>
+      <h4>Forandringer på book.js</h4>
+      <p>Denne JavaScripten gjør at man kan booke bord online, og få opp en bestilllingsbekreftelse når skjemaet er fyllt ut. Alle input (utenom kommentar) må være med, hvis ikke får ikke brukeren til å bestille bord.</p>
+      <h4>Forandringer på navigationbar.js</h4>
+      <p>Vi hadde ikke tenkt å lage navbaren i JavaScript i utganspunktet, men som en html-fil. Vi endret på hvordan teksten skal se ut når vi hoover over den.
+      I stedet for å få en underline, ble teksten 2px større slik at brukeren tydelig ser hvilken link man trykker på.</p>
+      <h4>Forandringer på takeAway.js</h4>
+      <p>Denne JavaScripten gjør det mulig at brukeren kan bestille mat (take away) via nett. Det vil dukke opp hva brukeren har lagt i handlekurven, sluttsummen og hvor og når maten kan hentes. </p>
+      <h4>Forandringer på footer.js</h4>
+      <p>Planen var også, som med navbaren, at vi skulle lage footeren i html. I stedet laget vi den i JavaScript, så vi slapp å bruke iframe. På footeren la vi til sosiale-medier-ikoner som linker til twitter.com, instagram.com
+        og facebook.com da vi ikke har egne sider her.</p>
+    </div>
+
+    <div class="requirements">
+      <h2>Ansvar og krav</h2>
+      <p>I P2 hadde vi fordelt ansvaret for oppgavene utover hvert medlem. Alle har gjort de oppgavene de har blitt tildelt, og tatt ansvar for sin egen side.
+      Vi har hjulpet hverandre en del, og selv om feks en person har hatt ansvaret for siden, har andre hjulpet med stylingen, javascripten etc (om nødvendig).
+    Med andre ord har alle fullført de kravene og det ansvaret som ble lagt på hver enkel person.  </p>
+    <p>Arnstein fullførte meny.html og take away- funksjonene på takeAway.js. Emilie fullførte hovedsiden og Hjalti fullførte vare_restauranter.html. Emilie og Hjalti samarbeidet
+      på navbaren og footeren, stylet den og gjorde den "responsive". Sepehr fullførte booking.html og fikset book.js slik at kunden kan booke bord.</p>
+    </div>
+
+    <div class="plan">
+      <h2>Oppdatering av organisering av filene</h2>
+      <p>Liste over filer og mapper:</p>
+      <ul>
+        <li>index.html</li>
+        <li>meny.html</li>
+        <li>booking.html</li>
+        <li>vare_restauranter.html</li>
+        <li>img/
+            <ul>
+            <li>index/
+              <ul>
+                <li>fajitas.png</li>
+                <li>nachos.png</li>
+                <li>nachos1.png</li>
+                <li>startbilde_taco.png</li>
+                <li>three_tacos.png</li>
+              </ul></li>
+            <li>Logo/
+              <ul>
+                <li>Logo.png</li>
+              </ul></li>
+            <li>meny/
+              <ul>
+                <li>fajitas.png</li>
+                <li>mexicanfiesta.png</li>
+                <li>mrchilli.png</li>
+                <li>norsktaco.png</li>
+                <li>startbilde_taco.png</li>
+                <li>supernachos.png</li>
+                <li>tacoescobar.png</li>
+              </ul></li>
+            <li>social_media/
+              <ul>
+                <li>facebook_logo.png</li>
+                <li>instagram_logo.png</li>
+                <li>twitter_logo.ong</li>
+              </ul></li>
+            <li>vare_restauranter/
+              <ul>
+                <li>taco1.jpg</li>
+                <li>...</li>
+                <li>taco4.jpg</li>
+              </ul></li>
+          </ul></li>
+        <li>scripts/
+          <ul>
+            <li>booking.js</li>
+            <li>takeAway.js</li>
+            <li>navigationbar.js</li>
+            <li>footer.js</li>
+          </ul></li>
+        <li>CSS/
+          <ul>
+            <li>style.css</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Endelig arbeidsfordeling og frister</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Fil</th>
+            <th>Beskrivelse</th>
+            <th>Ansvarlig</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>index.html</td>
+            <td>Hovedsiden.</td>
+            <td>Emilie</td>
+          </tr>
+          <tr>
+            <td>booking.html</td>
+            <td>Booking-siden der kunden kan booke bord hos Tacorama. Informasjon om hvert spisested skal også være på nettsiden.</td>
+            <td>Sepehr</td>
+          </tr>
+          <tr>
+            <td>meny.html</td>
+            <td>En oversikt over matrettene. Informasjon om pris, hva retten inneholder osv.</td>
+            <td>Arnstein</td>
+          </tr>
+          <tr>
+            <td>vare_restauranter.html</td>
+            <td>Kontaktinformasjon til hver restaurant. Åpningstider, adresse, telefonnummer og e-mail.</td>
+            <td>Hjalti</td>
+          </tr>
+          <tr>
+            <td>style.css</td>
+            <td>CSS filen som inneholder all styling av nettsiden.</td>
+            <td>Alle</td>
+          </tr>
+          <tr>
+            <td>book.js</td>
+            <td>Pop-up som bekreftelse på reservasjon og gjengivelse av brukeres informasjon.</td>
+            <td>Sepehr</td>
+          </tr>
+          <tr>
+            <td>takeAway.js</td>
+            <td>Summerer varene i handlekurven, legger til varer, trekker fra varer og forteller hvor og når brukere kan hente sin take away.</td>
+            <td>Arnstein</td>
+          </tr>
+          <tr>
+            <td>navigationbar.js</td>
+            <td>Navbaren lages i javascript. Dropdown-meny når siden blir mindre slik at navbaren er "responsive" til siden.</td>
+            <td>Emilie og Hjalti</td>
+          </tr>
+          <tr>
+            <td>footer.js</td>
+            <td>Kontaktinformasjon nederst på siden til vår hovedrestaurant. Inneholder adresse, e-mail, telefonnummer og sosiale medier.</td>
+            <td>Emilie og Hjalti</td>
+          </tr>
+          <tr>
+            <td>Kontroll</td>
+            <td>Sjekking av alle filene for feil.</td>
+            <td>Alle</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>Arnstein, Emilie, Hjalti og Sepehr</footer>
+
+  </body>
+</html>
