@@ -144,6 +144,7 @@ function confirmOrder(){
   const personalInfo = document.getElementById('personalInfo');
 
   document.getElementById('orderForm').style.display="none";
+  document.getElementById('personalInfo').style.backgroundColor=" #ffb594";
 
 
   personalInfo.appendChild(makeP);
@@ -174,8 +175,8 @@ else{
 
 function revealNumber(parent, name){
 
-  parent.childNodes[3].style.display="inline-block";
-  parent.childNodes[5].style.display="inline-block";
+  parent.childNodes[3].style.visibility="visible";
+  parent.childNodes[5].style.visibility="visible";
 
 
 
