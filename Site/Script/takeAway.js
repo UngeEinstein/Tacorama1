@@ -144,7 +144,7 @@ function confirmOrder(){
   const personalInfo = document.getElementById('personalInfo');
 
   document.getElementById('orderForm').style.display="none";
-  document.getElementById('personalInfo').style.backgroundColor=" #ffb594";
+
 
 
   personalInfo.appendChild(makeP);
@@ -164,7 +164,7 @@ function confirmOrder(){
     getInputs[i].style.display="none";
     getMinButtons[i].style.display="none";
   }
-  document.getElementById("orderbtns").style.display="none";
+  document.getElementById("orderbtns").style.visibility="hidden";
 
 }
 else{
