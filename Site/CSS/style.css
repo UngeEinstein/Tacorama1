@@ -341,7 +341,9 @@ h2.title{
 
 h1#bestillingsOverskrift {
     position:  relative;
-    right: 10%;
+    margin: auto;
+    text-align: center;
+    margin-top: 6%;
 
 }
 
@@ -418,21 +420,18 @@ menuContainer{
 
 #orderRow {
   position: relative;
-  margin-left: 20%;
-  align-items: center;
-  display: inline-block;
-  min-height:70%;
-  width:80%;
-  margin-top: 6%;
+  margin: auto;
+  width:100%;
 }
-
+.test1 {
+  text-align: center;
+}
 
 #cartInfoContainer{
   display:inline-block;
   background-color: #fff280;
   min-height: 300px;
   min-width: 156px;
-  float:left;
   text-align: right;
 
 }
@@ -465,10 +464,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #personalInfoContainer {
+  background-color: #ffb594;
+  display: inline-block;
+  min-height: 50%;
   min-height: 300px;
-
-  display:inline-block;
-  width:35%;
+  min-width: 156px;
   text-align: left;
 
 
