@@ -27,16 +27,18 @@ p {
   width: 60%;
   margin: auto;
   position: relative;
+  margin-top: 21%;
 }
 
 #forsidebilde {
   width: 100%;
-  padding-top: 7%;
+  position: relative;
+  top: 100px;
 }
 
 .index_start_img_content {
   position: relative;
-  margin-top: -30%;
+  margin-top: -22%;
   left: 25%;
   width: 50%;
   border: 0.2rem solid #b73d0f;
@@ -48,13 +50,17 @@ p {
   .index_start_img_content {
     display: none;
   }
+  .index_content {
+    margin-top: 15%;
+  }
 }
 
-@media only screen and (max-width: 1385px) {
+@media only screen and (max-width: 1385px) and (min-width: 885px) {
   .index_content {
     margin-top: 11%;
   }
 }
+
 
 #make_a_booking_link {
   color: #b73d0f;
