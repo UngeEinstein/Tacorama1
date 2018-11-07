@@ -5,203 +5,197 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/png" href="IMG/Logo/Logo.png">
     <link rel="stylesheet" href="CSS/style.css">
-    </style>
     <link href="https://fonts.googleapis.com/css?family=Bubbler One" rel="stylesheet">
-    <title></title>
+    <title>Meny</title>
 </head>
 
 <body>
+    <!-- Selve menyen med bilder -->
+    <div id="menuContainer">
+        <h1 id="menuh1">Vår Meny</h1>
 
-  <div id="menuContainer">
-    <h1 id="menuh1">Vår Meny</h1>
+        <div id=menuRow1>
 
-    <div id=menuRow1>
-
-        <div class="foodDish" id="row1-1">
-            <h2 class="title"> Mexican Fiesta</h2>
-              <h1 class="price">120,-</h1>
-
-
-
-            <div class="inputContainer">
-          <button type onclick="revealNumber(this.parentElement, 'Mexican Fiesta')" class="reveal" id="reveal">Bestill+</button>
-            <input class="orderInput" onchange="addItemToCart('Mexican Fiesta', this.value)" type="number" min="0" max="100" value="0" onkeydown="return false"/>
-            <button class="minButton" onclick="countDown(this.parentElement,'Mexican Fiesta')">-</button>
-          </div><br><br>
-            <img class="menuPic" src="IMG/meny/mexicanfiesta.png"></img>
-          <p class="description"> En festplate med quesedilla, burrito, tacos og masse digg tilbehør. Ment for 2 eller flere personer.</p>
+            <div class="foodDish" id="row1-1">
+                <h2 class="title"> Mexican Fiesta</h2>
+                <h1 class="price">120,-</h1>
 
 
+
+                <div class="inputContainer">
+                    <button onclick="revealNumber(this.parentElement, 'Mexican Fiesta')" class="reveal">Bestill+</button>
+                    <input class="orderInput" onchange="addItemToCart('Mexican Fiesta', this.value)" type="number" min="0" max="100" value="0" onkeydown="return false" />
+                    <button class="minButton" onclick="countDown(this.parentElement,'Mexican Fiesta')">-</button>
+                </div><br><br>
+                <img alt="Mexican Fiesta" class="menuPic" src="IMG/meny/mexicanfiesta.png">
+                <p class="description"> En festplate med quesedilla, burrito, tacos og masse digg tilbehør. Ment for 2 eller flere personer.</p>
 
 
 
 
-        </div>
 
 
-        <div class="foodDish" id="row1-2">
-            <h2 class="title">Fredagstaco</h2>
-            <h1 class="price">99,-</h1>
-            <div>
-            <button type onclick="revealNumber(this.parentElement,'Fredagstaco')" class="reveal" id="reveal">Bestill+</button>
-                <input class="orderInput" oninput="addItemToCart('Fredagstaco', this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
-                <button class="minButton" onclick="countDown(this.parentElement,'Fredagstaco')">-</button>
-              </div><br><br>
+            </div>
 
 
-                <img class="menuPic" src="IMG/meny/norsktaco.png"></img>
+            <div class="foodDish" id="row1-2">
+                <h2 class="title">Fredagstaco</h2>
+                <h1 class="price">99,-</h1>
+                <div>
+                    <button onclick="revealNumber(this.parentElement,'Fredagstaco')" class="reveal" >Bestill+</button>
+                    <input class="orderInput" oninput="addItemToCart('Fredagstaco', this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+                    <button class="minButton" onclick="countDown(this.parentElement,'Fredagstaco')">-</button>
+                </div><br><br>
+
+
+                <img class="menuPic" alt="Fredagstaco" src="IMG/meny/norsktaco.png">
                 <p class="description">En klassisk norsk fredagstaco med masse rømme, guacamole og mild salsa.</p>
 
 
+            </div>
         </div>
-      </div>
-      <div id="menuRow2">
-        <div class="foodDish" id="row1-3">
-            <h2 class="title"> Taco Escobar </h2>
+        <div id="menuRow2">
+            <div class="foodDish" id="row1-3">
+                <h2 class="title"> Taco Escobar </h2>
 
-            <h1 class="price">130,-</h1>
-            <div>
-              <button type onclick="revealNumber(this.parentElement,'Taco Escobar')" class="reveal" id="reveal">Bestill+</button>
-                <input class="orderInput" onchange="addItemToCart('Taco Escobar',this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
-                <button class="minButton" onclick="countDown(this.parentElement,'Taco Escobar')">-</button>
+                <h1 class="price">130,-</h1>
+                <div>
+                    <button onclick="revealNumber(this.parentElement,'Taco Escobar')" class="reveal" >Bestill+</button>
+                    <input class="orderInput" onchange="addItemToCart('Taco Escobar',this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+                    <button class="minButton" onclick="countDown(this.parentElement,'Taco Escobar')">-</button>
 
-              </div><br><br>
+                </div><br><br>
 
-                  <img class="menuPic" src="IMG/meny/tacoescobar.png"></img>
+                <img alt="Taco Escobar" class="menuPic" src="IMG/meny/tacoescobar.png">
 
                 <p class="description">En spicy taco fylt med enten biff/kylling, ris, hot salsa og masse annet digg meksikansk tilbehør.</p>
 
 
+            </div>
+
+
+
+            <div class="foodDish">
+                <h2 class="title">Supernachos</h2>
+                <h1 class="price">110,-</h1>
+                    <div>
+                        <button onclick="revealNumber(this.parentElement,'Super Nachos')" class="reveal">Bestill+</button>
+                        <input class="orderInput" oninput="addItemToCart('Super Nachos', this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+                        <button class="minButton" onclick="countDown(this.parentElement,'Super Nachos')">-</button>
+                    </div><br><br>
+
+                    <img alt="Super Nachos" class="menuPic" src="IMG/meny/supernachos.png">
+                    <p class="description">Store mengder nachos. Guacamole, rømme og salsa følger med.</p>
+
+
+            </div>
         </div>
 
+        <div id="menuRow3">
+            <div class="foodDish">
+                <h2 class="title">The Wall</h2>
+                <h1 class="price">150,-</h1>
+                <div>
+                    <button onclick="revealNumber(this.parentElement,'The Wall')" class="reveal">Bestill+</button>
+                    <input class="orderInput" oninput="addItemToCart('The Wall', this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+                    <button class="minButton" onclick="countDown(this.parentElement,'The Wall')">-</button>
 
+                </div><br><br>
 
-        <div class="foodDish">
-            <h2 class="title">Supernachos</h2>
-            <h1 class="price">110,-</h2>
-            <div>
-              <button type onclick="revealNumber(this.parentElement,'Super Nachos')" class="reveal" id="reveal">Bestill+</button>
-                <input class="orderInput" oninput="addItemToCart('Super Nachos', this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
-                <button class="minButton" onclick="countDown(this.parentElement,'Super Nachos')">-</button>
-              </div><br><br>
-
-                  <img class="menuPic" src="IMG/meny/supernachos.png"></img>
-                <p class="description">Store mengder nachos. Guacamole, rømme og salsa følger med.</p>
-
-
-        </div>
-      </div>
-
-      <div id="menuRow3">
-        <div class="foodDish">
-            <h2 class="title">The Wall</h2>
-              <h1 class="price">150,-</h1>
-            <div>
-              <button type onclick="revealNumber(this.parentElement,'The Wall')" class="reveal" id="reveal">Bestill+</button>
-              <input class="orderInput" oninput="addItemToCart('The Wall', this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
-              <button class="minButton" onclick="countDown(this.parentElement,'The Wall')">-</button>
-
-            </div><br><br>
-
-                <img class="menuPic" src="IMG/meny/startbilde_taco.png"></img>
+                <img alt="The Wall" class="menuPic" src="IMG/meny/startbilde_taco.png">
                 <p class="description">En vegg av forskjellig typer minitaco. Serveres med guacamole, salsa og andre tilbehør.</p>
 
+            </div>
+
+            <div class="foodDish">
+                <h2 class="title">Filippos Fajitas</h2>
+
+                <h1 class="price">149,-</h1>
+                    <div>
+                        <button onclick="revealNumber(this.parentElement,'Filippos Fajitas')" class="reveal">Bestill+</button>
+                        <input class="orderInput" oninput="addItemToCart('Filippos Fajitas', 120,this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
+
+                        <button class="minButton" onclick="countDown(this.parentElement,'Filippos Fajitas')">-</button>
+                    </div><br><br>
+
+
+                    <img alt="Fillipos Fajitas" class="menuPic" src="IMG/meny/fajitas.png">
+                    <p class="description">Filippos favoritt-fajitas servert med kylling, ris, stekte grønnsaker, salsa og guacamole.</p>
+
+            </div>
         </div>
-
-        <div class="foodDish">
-            <h2 class="title">Filippos Fajitas</h2>
-
-                <h1 class="price">149,-</h2>
-            <div>
-              <button  onclick="revealNumber(this.parentElement,'Filippos Fajitas')" class="reveal" id="reveal">Bestill+</button>
-              <input class="orderInput" oninput="addItemToCart('Filippos Fajitas', 120,this.value)" type="number" min="0" max="100" value="0" onkeydown="return false">
-
-                <button class="minButton" onclick="countDown(this.parentElement,'Filippos Fajitas')">-</button>
-            </div><br><br>
-
-
-                <img class="menuPic" src="IMG/meny/fajitas.png"></img>
-                <p class="description">Filippos favoritt-fajitas servert med kylling, ris, stekte grønnsaker, salsa og guacamole.</p>
-
-        </div>
-      </div>
     </div>
+<!-- Bestillingsdel -->
+    <div id="orderRow">
 
-        <div id="orderRow">
 
-
-          <div class="test1">
+        <div class="test1">
             <h1 id="bestillingsOverskrift"> Din bestilling: </h1>
             <div id="cartInfoContainer">
-              <div id="cartInfo">
-                <ul id="orderList">
+                <div id="cartInfo">
+                    <ul id="orderList">
 
-                </ul>
-                <div id="totalSumDiv">
+                    </ul>
+                    <div id="totalSumDiv">
 
-                  <p id="totalSum"> Totalsum: 0,- kr</p>
-                  <p id="paymentInformation"> (Betales ved henting) </p>
+                        <p id="totalSum"> Totalsum: 0,- kr</p>
+                        <p id="paymentInformation"> (Betales ved henting) </p>
+                    </div>
                 </div>
             </div>
-          </div>
 
 
 
 
             <div class="orderInfo" id="personalInfoContainer">
-              <div id="personalInfo">
 
-                <form  method="post" id="orderForm">
+                <div id="personalInfo">
 
-                Navn:
-                <br>
-                <input type="text" id="name" required>
-                <br><br>
+                    <form method="post" id="orderForm">
 
-                Telefonnummer:
-                <br>
-                <input type="number" id="phoneNumber" required>
-                <br><br>
-
-                Hentested:
-                <br>
-                <select id="pickUp">
+                        Navn:
+                        <br>
+                        <input type="text" id="name" placeholder="Jonny Johnsen" required>
+                        <br><br> Telefonnummer (8 siffer):
+                        <br>
+                        <input type="tel" pattern="[0-9]{8}" id="phoneNumber" placeholder="12345678" required>
+                        <br><br> Hentested:
+                        <br>
+                        <select id="pickUp">
                     <option value="Majorstuen, Oslo">Majorstuen, Oslo</option>
                     <option value="Grønland, Oslo">Grønland, Oslo</option>
                     <option value="Solsiden, Tronheim">Solsiden, Tronheim</option>
                     <option value="Bryggen, Bergen">Bryggen, Bergen</option>
                 </select>
-                <br><br>
-
-                Hentetidspunkt (idag fra 11:00-23:00):
-                <br>
-                <input type="time" id="pickUpTime"
-               min="11:00" max="23:00" required>
-                <br><br>
+                        <br><br> Hentetidspunkt (idag fra 11:00-23:00):
+                        <br>
+                        <input type="time" id="pickUpTime" min="11:00" max="23:00" required>
+                        <br/><br/>
 
 
 
+              </div>
             </div>
-          </div>
-
-          </div>
         </div>
-        <div id="orderConfirmation">
-            <input id="orderbtns" type="submit" value="Bekreft bestilling"></input>
-        </div>
-    </form>
+    </div>
+
+    <div id="orderConfirmation">
+        <input id="orderbtns" type="submit" value="Bekreft bestilling">
+      </form>
+    </div>
 
 
 
+<!-- footer -->
     <nav id="navbar">
 
     </nav>
     <div id="footer_div">
     </div>
 
-<script src="Script/navigationbar.js"></script>
-<script src="Script/takeAway.js"></script>
-<script type="text/javascript" src="Script/footer.js" ></script>
+    <script src="Script/navigationbar.js"></script>
+    <script src="Script/takeAway.js"></script>
+    <script src="Script/footer.js"></script>
 </body>
 
 </html>
