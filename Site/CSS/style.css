@@ -257,7 +257,7 @@ p {
   width: 80%;
 }
 
-/* Arnstein */
+/* Meny */
 #menuContainer {
   top: 100px;
   text-align: center;
@@ -266,12 +266,12 @@ p {
   margin: auto;
   margin-bottom: 3%;
 }
-
+/* menyrader */
 #menuRow1, #menuRow2, #menuRow3 {
   display: inline-block;
   width: 300px;
 }
-
+/*Hver enkelt rett */
 .foodDish {
   margin: auto;
   border-radius: 10px;
@@ -285,12 +285,12 @@ p {
 .foodDish:hover {
   background-color: #f7cda1;
 }
-
+/*Overskrift på hver rett */
 .title {
   margin-top: 5px;
   margin-bottom: 1px;
 }
-
+/*Pris på rett */
 .price {
   position: relative;
   display: inline-block;
@@ -303,25 +303,6 @@ p {
   color: #b73d0f;
 }
 
-.bestillButton {
-  font-size: 20px;
-}
-
-#name, #phoneNumber, #pickUpTime {
-  font-size: 10px;
-}
-
-#pickUp {
-  font-size: 13px;
-}
-
-#orderForm {
-  margin-left: 5px;
-  margin-top: 5px;
-  position: relative;
-  overflow: none;
-  height: 100%;
-}
 
 .description {
   display: block;
@@ -386,6 +367,25 @@ input.orderInput {
   padding: 0.6em;
 }
 
+
+/* Personlig informasjon Inputs i bestillingskjema */
+#name, #phoneNumber, #pickUpTime {
+  font-size: 10px;
+}
+
+#pickUp {
+  font-size: 13px;
+}
+
+/*Bestillingsskjema */
+#orderForm {
+  margin-left: 5px;
+  margin-top: 5px;
+  position: relative;
+  overflow: none;
+  height: 100%;
+}
+
 #orderRow {
   top: 65px;
   position: relative;
@@ -422,7 +422,7 @@ input.orderInput {
   font-size: 10px;
   margin-top: 0px;
 }
-
+/*Fjerner arrows i input felt */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -455,12 +455,12 @@ p.description {
   letter-spacing: 0px;
   line-height: 18px;
 }
-
+/* Ul liste i handlekurv */
 #orderList {
   list-style-type: none;
   font-style: "Bubbler One";
 }
-
+/*Stor rød bestillingsknapp */
 #orderbtns {
   position: relative;
   background-color: #ca422d;
@@ -471,7 +471,7 @@ p.description {
   font-size: 20px;
   margin-top: 80px;
 }
-
+/* Diven som vises etter bestilling */
 #orderConfirmation {
   width: 60%;
   text-align: center;
@@ -482,6 +482,7 @@ p.description {
   text-align: left;
 }
 
+/* Bilder til rettene */
 .menuPic {
   position: relative;
   display: block;
@@ -492,5 +493,4 @@ p.description {
   overflow: hidden;
   padding: 3% 0 0 0;
 }
-
-/* Arnsstein */
+/* Meny slutt */

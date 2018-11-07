@@ -13,8 +13,8 @@
   <div class="booking_content">
     <h1> Bordbestilling </h1>
     <div class="booking-form">
-      <form method="post" onchange="show()" id="form">
-        <select class="select" id="selectform">
+      <form method="post" onchange="show()" id="form"> <!-- viser ikke skjema før restaurant er valgt!-->
+        <select class="select" id="selectform"> <!-- Dropdown, valg av restauranter !-->
           <option value="" selected> Velg restaurant </option>
           <option value="Solsiden"> Solsiden, Trondheim </option>
           <option value="Tyskebryggen"> Tyskebryggen, Bergen </option>
@@ -50,7 +50,7 @@
         </div>
       </form>
       <div class="booking_result">
-        <p id="book_res"></p>
+        <p id="book_res"></p> <!-- vestillingsbekreftelse dukker opp her !-->
       </div>
       <div class="booking-startinfo" id="booking_fjern">
         <p> Er det fullt på online-bookingen? Ikke fortvil! Vi holder av omtrent halve restauranten til de av dere som spontant stikker innom. Vi anbefaler likevel å forhåndsbestille bord, slik at dere har bord om restauranten er full. Er dere over
@@ -76,15 +76,15 @@
       </div>
     </div>
   </div>
-  <nav id="navbar">
+  <nav id="navbar"> <!-- legger til navigasjonsbar !-->
 
   </nav>
-  <div id="footer_div">
+  <div id="footer_div"> <!-- legger til footer !-->
   </div>
 
-  <script src="Script/footer.js"></script>
-  <script src="Script/book.js"></script>
-  <script src="Script/navigationbar.js"></script>
+  <script src="Script/footer.js"></script><!-- legger til footer !-->
+  <script src="Script/book.js"></script> <!-- script til JS for booking !-->
+  <script src="Script/navigationbar.js"></script><!-- legger til navigasjonsbar !-->
 </body>
 
 </html>
