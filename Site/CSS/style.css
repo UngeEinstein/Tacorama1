@@ -1,4 +1,6 @@
 /* CSS generelt */
+
+
 body {
   background-color: #fce5cdff;
   font-family: "Bubbler One", Verdana;
@@ -98,7 +100,7 @@ p {
     display: block;
     font-size: 20px;
 }
-.booking-form input, select, textarea { /* css til form*/
+.booking-form input, select, textarea, #name, #phoneNumber, #pickUpTime { /* css til form*/
   border: 1px solid #999;
   border-radius: 10px;
   padding: 0.6em;
@@ -227,6 +229,7 @@ p {
 
 }
 .rest_row1, .rest_row2{
+  width:40%;
   display: inline-block;
   margin: auto;
   position: relative;
@@ -239,6 +242,11 @@ p {
 .menuPic {
   padding: 3% 0 0 0;
 }
+.testtest{
+position: relative;
+left: 10%;
+width: 80%;
+}
 
 /* Arnstein */
 
@@ -246,41 +254,24 @@ p {
 
 #menuContainer{
   top:100px;
+  text-align: center;
   position: relative;
-  display:inline-block;
-  width:60%;
-  left:20%;
-  right:20%;
+  width:100%;
+  margin: auto;
   margin-bottom: 3%;
 }
 
-#menuRow1{
-  display:inline-block;
-  width:30%;
-  min-height: 200px;
-  float: left;
-}
-
-#menuRow2{
-  display:inline-block;
-  width:30%;
-  min-height: 200px;
-  margin-left: 5%;
-  margin-right: 5%;
-
-}
-#menuRow3{
-  display:inline-block;
-  width:30%;
-  min-height: 200px;
-  float:right;
-
-
+#menuRow1, #menuRow2, #menuRow3{
+  display: inline-block;
+  width: 300px;
 }
 
 
 .foodDish {
-  border: 2px black solid;
+  margin: auto;
+  border-radius: 10px;
+  border: 0.5px black solid;
+  width: 90%;
   min-height: 300px;
   margin-top:5%;
   background-color: #f5c189;
@@ -298,7 +289,6 @@ p {
   display: inline-block;
   font-family: "Bubbler One";
   margin-top: 5px;
-  margin-left: 5px;
   margin-bottom: 1px;
 
 }
@@ -325,6 +315,19 @@ h2.title{
 
 
 }
+#name, #phoneNumber, #pickUpTime{
+  font-size: 10px;
+}
+#pickUp {
+  font-size: 13px;
+}
+#orderForm {
+  margin-left: 5px;
+  margin-top: 5px;
+  position: relative;
+  overflow: none;
+  height:100%;
+}
 
 .description{
   display:block;
@@ -335,7 +338,7 @@ h2.title{
   margin-right: 5px;
 
 }
-  .chilli{
+.chilli{
     position: relative;
     display: inline-block;
     float:right;
@@ -363,12 +366,15 @@ h1#bestillingsOverskrift {
   padding: 0.6em;
   font-family: "Bubbler One";
   font-size: 12px;
+  float: left;
 
 
 }
 
 .minButton{
-  display:none;
+  float: left;
+  display:inline-block;
+  visibility: hidden;
   min-width: 25px;
   background-color: #ca422d;
   border:#ca422d;
@@ -378,17 +384,20 @@ h1#bestillingsOverskrift {
 
 }
 input.orderInput{
-display: none;
-border:#f5c189;
-background-color: #fae6d1;
-border-radius: 5px;
+
+  float: left;
+  display: inline-block;
+  visibility: hidden;
+  border:#f5c189;
+  background-color: #fae6d1;
+  border-radius: 5px;
 
 }
 
 .orderInput{
+  width:18px;
   position: relative;
   padding: 0.6em;
-
 
 }
 
@@ -416,21 +425,20 @@ menuContainer{
 
 #orderRow {
   position: relative;
+  margin-left: 20%;
+  align-items: center;
   display: inline-block;
   min-height:70%;
-  left:30%;
   width:80%;
-  left:19.5%;
-  margin-top: 4%;
+  margin-top: 6%;
 }
 
+
 #cartInfoContainer{
-
   display:inline-block;
-  width:35%;
-
   background-color: #fff280;
-  min-height: 269px;
+  min-height: 300px;
+  min-width: 156px;
   float:left;
   text-align: right;
 
@@ -464,22 +472,26 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #personalInfoContainer {
+  min-height: 300px;
 
-  min-height: 269px;
   display:inline-block;
   width:35%;
-  background-color: #ffb594;
-
   text-align: left;
 
 
 }
 
+
 #personalInfo{
+  background-color: #ffb594;
   display: inline-block;
-  margin-top: 5px;
-  margin-left: 5px;;
   min-height: 50%;
+  min-height: 300px;
+  min-width: 156px;
+}
+#personalInfo p{
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 
@@ -491,6 +503,7 @@ p.description{
 
 
 
+
 #orderList{
   list-style-type: none;
   font-style: "Bubbler One";
@@ -498,37 +511,28 @@ p.description{
 
 #orderbtns {
   position: relative;
-  left:40%;
-  width:15%;
-  text-align: center;
-  vertical-align: center;
-  margin-top:1%;
-  margin-bottom:0%;
   background-color: #ca422d;
+  border: none;
   border-radius: 10px;
   padding: 0.6em;
   font-family: "Bubbler One";
   font-size: 20px;
+  margin-top: 5px;
 
+}
+#orderConfirmation {
+  width: 60%;
+  text-align: center;
+  margin: auto;
 }
 
 #confirmationText {
   text-align: left;
 }
 
-#row1-1{
 
-
-}
-#row1-2{
-
-}
-#row1-3{
-
-}
 
 .menuPic {
-  display:none;
   position:relative;
   display: block;
   left:20%;
