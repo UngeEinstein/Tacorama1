@@ -83,7 +83,6 @@ function displayCart(menuItem) {
         //Kalkulerer totalpris
         totalPrice += orderPrice * orderCount;
         document.getElementById("totalSum").innerHTML = "Totalsum: " + totalPrice + ",-kr";
-        console.log(totalPrice);
 
     };
 }
@@ -114,7 +113,6 @@ function confirmOrder() {
 
         //fjerner bestillingsknapper
         for (var i = 0; i < getRevealButtons.length; i++) {
-            console.log(i);
             getRevealButtons[i].style.display = "none";
             getInputs[i].style.display = "none";
             getMinButtons[i].style.display = "none";
