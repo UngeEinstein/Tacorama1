@@ -251,7 +251,7 @@ p {
   position: relative;
 
 }
-@media only screen and (min-width: 1220px) {
+@media only screen and (min-width: 942px) {
   .rest_row2 {
     margin-left: -160px;
   }
@@ -260,7 +260,8 @@ p {
 .varerest {
   position: relative;
   margin: auto;
-  width: 100%;
+  width: 130%;
+  right:14%;
 }
 
 /* Meny */
