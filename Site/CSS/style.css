@@ -109,6 +109,10 @@ p {
 .booking-form { /* sentrerer hele form*/
   text-align: center;
 }
+
+#booking-form {
+  background-color: #ca422d;
+}
 .first-row-booking, .second-row-booking { /* css til de fire informasjonskapslene til restauranter i booking*/
   display: inline-block;
   padding-left: 5%;
