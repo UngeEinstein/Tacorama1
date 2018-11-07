@@ -238,9 +238,13 @@ p {
 .rest_text {
   margin-bottom: 5%;
 }
+<<<<<<< HEAD
 
 .rest_row1, .rest_row2 {
   width: 40%;
+=======
+.rest_row1, .rest_row2{
+>>>>>>> a01ca9fd72a3c5c37b8b7dcd9bc9439d422f2bb6
   display: inline-block;
   margin: auto;
   position: relative;
