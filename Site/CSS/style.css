@@ -109,10 +109,6 @@ p {
 .booking-form { /* sentrerer hele form*/
   text-align: center;
 }
-
-#booking-form {
-  background-color: #ca422d;
-}
 .first-row-booking, .second-row-booking { /* css til de fire informasjonskapslene til restauranter i booking*/
   display: inline-block;
   padding-left: 5%;
@@ -191,7 +187,7 @@ p {
   max-height: 100px;
 }
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 885px) {
   #navbar a:not(:first-child){
     display: none;
     font-size: 20px;
@@ -233,10 +229,12 @@ p {
   position: relative;
 }
 
-.testtest{
-position: relative;
-left: 10%;
-width: 80%;
+.testtest {
+  display: block;
+}
+
+.menuPic {
+  padding: 3% 0 0 0;
 }
 
 /* Arnstein */
@@ -280,7 +278,7 @@ width: 80%;
 
 .foodDish {
   border: 2px black solid;
-  min-height: 300px;
+  min-height: 250px;
   margin-top:5%;
   background-color: #f5c189;
 }
@@ -296,25 +294,19 @@ width: 80%;
 .title{
   display: inline-block;
   font-family: "Bubbler One";
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-bottom: 1px;
+  margin-bottom: 0px;
 
 }
 h2.title{
   display: inline-block;
 }
 
-
 .price{
   position: relative;
-  display: inline-block;
-  float:right;
-
+  display: block;
   text-align: left;
   font-size: 20px;
-  margin-top: 5px;
-  margin-right: 5px;
+  margin-top: 0%;
   padding-top: 0%;
   color:#b73d0f;
 }
@@ -330,25 +322,24 @@ h2.title{
   position:relative;
   text-align: left;
   font-size: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
+  width:100%;
+
 
 }
-  .chilli{
-    position: relative;
-    display: inline-block;
-    float:right;
-    height:7%;
-    width:8%;
-  }
-
-h1#bestillingsOverskrift {
-    position:  relative;
-    right: 10%;
-
+#bestillingsOverskrift{
+  position:relative;
+  left: -10%;
 }
 
 
+
+.chilli{
+  float:right;
+  position: relative;
+  display: inline-block;
+  height:7%;
+  width:7%;
+}
 
 
 
@@ -356,36 +347,25 @@ h1#bestillingsOverskrift {
 
   display: inline-block;
   background-color: #ca422d;
-  border: #ca422d;
-  margin-left: 5px;
-  border-radius: 5px;
+  border: 1px solid #999;
+  border-radius: 10px;
   padding: 0.6em;
   font-family: "Bubbler One";
   font-size: 12px;
 
 
 }
-
-.minButton{
-  display:none;
-  min-width: 25px;
-  background-color: #ca422d;
-  border:#ca422d;
-  border-radius: 5px;
-  padding: 0.6em;
-  font-weight: bold;
-
-}
 input.orderInput{
 display: none;
-border:#f5c189;
-background-color: #fae6d1;
-border-radius: 5px;
 
 }
 
 .orderInput{
+
   position: relative;
+  margin-top: 7%;
+  border: 1px solid #999;
+  border-radius: 10px;
   padding: 0.6em;
 
 
@@ -424,10 +404,9 @@ menuContainer{
 }
 
 #cartInfoContainer{
-
   display:inline-block;
   width:35%;
-
+  border:1px #ccc solid;
   background-color: #fff280;
   min-height: 269px;
   float:left;
@@ -438,8 +417,6 @@ menuContainer{
 #cartInfo{
   display: inline-block;
   margin-top: 2%;
-  margin-right: 5px;
-  min-height: 50%;
 
 
 
@@ -447,19 +424,7 @@ menuContainer{
 
 #totalSum{
   text-align: right;
-  margin-bottom: 0px;
 
-}
-
-#paymentInformation{
-  font-size: 10px;
-  margin-top: 0px;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 #personalInfoContainer {
@@ -467,8 +432,9 @@ input[type=number]::-webkit-outer-spin-button {
   min-height: 269px;
   display:inline-block;
   width:35%;
+  border:1px #ccc solid;
   background-color: #ffb594;
-
+  margin-left: 0.5%;
   text-align: left;
 
 
@@ -476,16 +442,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 #personalInfo{
   display: inline-block;
-  margin-top: 5px;
-  margin-left: 5px;;
+  margin-top: 2%;
+  margin-left: 1%;
   min-height: 50%;
 }
 
 
 p.description{
-  font-size: 15px;
+  font-size: 10px;
   letter-spacing: 0px;
-  line-height: 18px;
+  line-height: 15px;
 }
 
 
@@ -501,9 +467,10 @@ p.description{
   width:15%;
   text-align: center;
   vertical-align: center;
-  margin-top:1%;
+  margin-top:0%;
   margin-bottom:0%;
   background-color: #ca422d;
+  border: 1px solid #999;
   border-radius: 10px;
   padding: 0.6em;
   font-family: "Bubbler One";
@@ -535,7 +502,6 @@ p.description{
   width:60%;
   max-width: 100%;
   overflow: hidden;
-  padding: 3% 0 0 0;
 }
 
 
