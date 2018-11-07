@@ -193,7 +193,7 @@ p {
   max-height: 100px;
 }
 
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 940px) {
   #navbar a:not(:first-child){
     display: none;
     font-size: 20px;
@@ -236,13 +236,6 @@ p {
   position: relative;
 }
 
-.testtest {
-  display: block;
-}
-
-.menuPic {
-  padding: 3% 0 0 0;
-}
 .testtest{
 position: relative;
 left: 10%;
@@ -541,6 +534,7 @@ p.description{
   width:60%;
   max-width: 100%;
   overflow: hidden;
+  padding: 3% 0 0 0;
 }
 
 
