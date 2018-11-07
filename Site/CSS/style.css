@@ -233,19 +233,10 @@ p {
   position: relative;
 }
 
-<<<<<<< HEAD
-.testtest {
-  display: block;
-}
-
-.menuPic {
-  padding: 3% 0 0 0;
-=======
 .testtest{
 position: relative;
 left: 10%;
 width: 80%;
->>>>>>> 243b89a2751e7f279c1706b23475ad39bcd7d3ae
 }
 
 /* Arnstein */
