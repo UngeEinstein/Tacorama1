@@ -377,7 +377,7 @@ input.orderInput {
 
 /* Personlig informasjon Inputs i bestillingskjema */
 #name, #phoneNumber, #pickUpTime {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 #pickUp {
