@@ -5,7 +5,7 @@ const footeren = `
     <ul>
       <li>Solsiden 3b, 7048 Trondheim</li>
       <li>tacorama@post.no</li>
-      <li>406 89 294</li>
+      <li>Tlf: 406 89 294</li>
     </ul>
   </div>
 
