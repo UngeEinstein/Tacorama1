@@ -3,6 +3,14 @@ let d = new Date();
 console.log(d.getHours());
 dateElement.setAttribute("min", d.toJSON().split('T')[0])
 //forhindrer bruker fra å velge en dato som er før idag. fikk ikke til slik at det gjaldt for klokkeslett også.
+const i = document.getElementById("tid");
+if (d.getHours() < 11 || document.getElementById("minDate").value > d.getDate()) {
+i.min = "11:00"
+} else {
+i.min = d.getHours() + ":" + d.getMinutes()
+}
+
+
 
 function show(value) { //funksjon til å åpne form når restaurant blir valgt
   if (value !== "") {
