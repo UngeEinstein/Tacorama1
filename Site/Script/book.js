@@ -2,7 +2,7 @@ const dateElement = document.getElementById("minDate"); //setter dato til idag.
 let d = new Date();
 console.log(d.getHours());
 dateElement.setAttribute("min", d.toJSON().split('T')[0])
-var div = document.getElementById('inputval'); //forhindrer bruker fra å velge en dato som er før idag. fikk ikke til slik at det gjaldt for klokkeslett også. 
+//forhindrer bruker fra å velge en dato som er før idag. fikk ikke til slik at det gjaldt for klokkeslett også.
 
 function show(value) { //funksjon til å åpne form når restaurant blir valgt
   if (value !== "") {
