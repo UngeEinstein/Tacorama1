@@ -20,6 +20,7 @@ const footeren = `
 
 </div>`
 
+// lager en funksjon som fyller HTML (footeren vår) inni en div. 
 function addfooter() {
   const targetElement = document.querySelector("#footer_div");
   targetElement.innerHTML = footeren;

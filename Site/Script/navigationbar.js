@@ -7,6 +7,7 @@ const menybar = `
 <a class="meny" href=./vare_restauranter.html>Våre restauranter</a>
 `
 
+// lager en funksjon som fyller inn navbaren vår i HTML
 function addmenu() {
   const targetElement = document.querySelector("#navbar");
   targetElement.innerHTML = menybar;
