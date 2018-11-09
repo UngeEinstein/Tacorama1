@@ -1,13 +1,23 @@
-const dateElement = document.getElementById("minDate"); //setter dato til idag.
+const inpDate = document.getElementById("minDate"); //setter dato til idag.
 let d = new Date();
-console.log(d.getHours());
-dateElement.setAttribute("min", d.toJSON().split('T')[0])
+inpDate.setAttribute("min", d.toJSON().split('T')[0])
 //forhindrer bruker fra å velge en dato som er før idag. fikk ikke til slik at det gjaldt for klokkeslett også.
-const i = document.getElementById("tid");
-if (d.getHours() < 11 || document.getElementById("minDate").value > d.getDate()) {
-i.min = "11:00"
-} else {
-i.min = d.getHours() + ":" + d.getMinutes()
+const inpTime = document.getElementById("tid");
+
+function setMinimum() {
+    d = new Date();
+    let today = //<-Variabel for streng med dato-formatet i dag.
+        d.getFullYear() + "-"
+        + (d.getMonth() < 9 ? "0" : "") +  (d.getMonth() + 1) + "-"
+        + (d.getDate() < 10 ? "0" : "") + (d.getDate());
+
+    console.log("let today =", today);
+    console.log("min klokkeslett skal være nå: ", today === inpDate.value && d.getHours() >= 11)
+    if (today === inpDate.value && d.getHours() >= 11) {
+        inpTime.min = d.getHours() + ":" + d.getMinutes();
+    } else {
+        inpTime.min = "11:00";
+    }
 }
 
 

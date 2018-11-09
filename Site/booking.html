@@ -37,10 +37,10 @@
           <input type="number" id="tlf" min="8" required>
 
           <label> Ønsket dato: </label>
-          <input type="date" id="minDate" required>
+          <input type="date" id="minDate" required oninput="setMinimum()">
 
           <label> Hvilket tidspunkt passer best?</label>
-          <input type="time" name="time" min="11:00" max="23:00" id="tid" required>
+          <input type="time" name="time" min="11:00" max="21:00" id="tid" required oninput="setMinimum()">
           <!-- fungerer når chrome er på norsk !-->
 
 

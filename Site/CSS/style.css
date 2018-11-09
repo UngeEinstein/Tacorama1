@@ -269,8 +269,7 @@ p {
 .varerest {
   position: relative;
   margin: auto;
-  width: 130%;
-  right:14%;
+  width: 100%;
 }
 
 /* Meny */
