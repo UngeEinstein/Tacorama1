@@ -1,6 +1,6 @@
+d = new Date();
+const inpTime = document.getElementById("pickUpTime"); //kobler html element med de nye egenskapene
 function checkTime(){
-  d = new Date();
-  const inpTime = document.getElementById("pickUpTime"); //kobler html element med de nye egenskapene
   if (d.getHours() >= 11) {
       inpTime.min = d.getHours() + ":" + d.getMinutes(); //ny minimum blir tredd inn hvis krav er innfridd
   } else {
